@@ -65,14 +65,23 @@
     };
 
     behaviors {
-        lt_to_layer_0: lt_to_layer_0 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP_TO_0";
-            bindings = <&mo>, <&to_layer_0>;
+    	encoder_msc_down_up: encoder_msc_down_up {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ENCODER_MSC_DOWN_UP";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+            tap-ms = <20>;
+        };    
+    
+    //    
+    //   lt_to_layer_0: lt_to_layer_0 {
+    //        compatible = "zmk,behavior-hold-tap";
+    //        label = "LAYER_TAP_TO_0";
+    //        bindings = <&mo>, <&to_layer_0>;
 
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
+    //        #binding-cells = <2>;
+    //        tapping-term-ms = <200>;
+    //    };
     };
 
     keymap {
@@ -86,7 +95,7 @@
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_MUHENKAN  &lt 2 SPACE  &lt_to_layer_0 3 TAB      &kp ENTER      &lt 1 INT_HENKAN                             &kp ESC
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         SYMBOL {
