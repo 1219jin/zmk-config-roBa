@@ -125,7 +125,7 @@
 
         SYMBOL {
             bindings = <
-&trans     &kp EXCLAMATION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans                      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS      &kp LCTRL          &kp PIPE
+&trans     &kp SQT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans                      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS      &kp LCTRL          &kp PIPE
 &kp TILDE  &kp DLLR         &kp PERCENT           &kp AMPERSAND          &trans  &trans      &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SEMICOLON  &kp SQT            &kp NON_US_BACKSLASH
 &kp GRAVE  &kp EXCLAMATION  &kp DOUBLE_QUOTES     &kp HASH               &trans  &trans      &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp COLON      &kp DOUBLE_QUOTES  &kp UNDERSCORE
 &trans     &trans           &trans                &trans                 &trans  &trans      &trans  &trans                                                                         &trans
