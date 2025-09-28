@@ -125,9 +125,9 @@
 
         SYMBOL {
             bindings = <
-&trans     &kp JP_QUOTE     &kp JP_LPAREN         &kp JP_RPAREN          &trans                      &kp JP_LPAREN         &kp JP_RPAREN          &kp MINUS       &kp JP_CARET       &kp JP_YEN
+&trans     &kp EXCLAMATION  &kp JP_DQUOTE         &kp HASH               &trans                      &kp JP_LPAREN         &kp JP_RPAREN          &kp MINUS       &kp JP_CARET       &kp JP_YEN
 &kp TILDE  &kp DLLR         &kp PERCENT           &kp JP_AMPERSAND       &trans  &trans      &trans  &kp JP_LBRACE         &kp JP_RBRACE          &kp SEMICOLON   &kp JP_COLON       &kp JP_AT
-&kp GRAVE  &kp EXCLAMATION  &kp JP_DQUOTE         &kp HASH               &trans  &trans      &trans  &kp LEFT_BRACKET      &kp JP_LBRACKET        &kp JP_RBRACKET &kp JP_DQUOTE      &kp JP_UNDERSCORE
+&kp GRAVE  &kp JP_QUOTE     &kp JP_LPAREN         &kp JP_RPAREN          &trans  &trans      &trans  &kp JP_LBRACKET       &kp JP_RBRACKET        &kp PERIOD      &kp JP_DQUOTE      &kp JP_UNDERSCORE
 &trans     &trans           &trans                &trans                 &trans  &trans      &trans  &trans                                                                         &trans
             >;
         };
