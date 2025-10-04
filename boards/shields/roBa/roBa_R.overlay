@@ -1,4 +1,18 @@
 #include "roBa.dtsi"
+#include <input/processors.dtsi>
+
+&zip_temp_layer {
+    excluded-positions = <
+        18 // J
+        19 // K
+        20 // L
+        // 34 // Ctrl
+    >;
+};
+
+&zip_temp_layer {
+    require-prior-idle-ms = <200>;
+};
 
 &default_transform {
     col-offset = <6>;
@@ -19,6 +33,8 @@
         status = "okay";
         compatible = "zmk,input-listener";
         device = <&trackball>;
+
+        input-processors = <&zip_temp_layer 6 10000>; // トラボ使用後10秒間レイヤー6が有効
     };
 };
 
@@ -57,6 +73,6 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        automouse-layer = <6>;
+        // automouse-layer = <6>;
     };
 };
