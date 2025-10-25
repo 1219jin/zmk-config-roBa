@@ -154,6 +154,7 @@
             #binding-cells = <1>;
             display-name = "Toggle Layer Off";
             toggle-mode = "off"; //レイヤーを無効化するための機能
+        };
 
         mt_exit_AML_on_tap: mt_exit_AML_on_tap {
             compatible = "zmk,behavior-hold-tap";
