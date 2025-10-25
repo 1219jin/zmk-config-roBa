@@ -112,6 +112,23 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+        exit_AML: exit_AML {
+            compatible = "zmk,behavior-macro";
+            wait-ms = <0>;
+            tap-ms = <0>;
+            #binding-cells = <0>;
+            bindings = <&tog_off MOUSE>;
+            label = "exit_AML"; //マウスキー以外が押されたときに、マウスレイヤーから抜ける
+        };
+
+        kp_exit_AML: kp_exit_AML {
+            compatible = "zmk,behavior-macro-one-param";
+            wait-ms = <0>;
+            tap-ms = <0>;
+            #binding-cells = <1>;
+            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &exit_AML>;
+            label = "KP_exit_AML"; //Shiftなど、マウスキー以外だけど使うものへの対応
+        };
     };
 
     behaviors {
@@ -123,15 +140,31 @@
 
             tap-ms = <20>;
         };
-
             
-           lt_to_layer_0: lt_to_layer_0 {
+        lt_to_layer_0: lt_to_layer_0 {
                 compatible = "zmk,behavior-hold-tap";
                 label = "LAYER_TAP_TO_0";
                 bindings = <&mo>, <&to_layer_0>;
                 #binding-cells = <2>;
                 tapping-term-ms = <200>;
             };
+
+        tog_off: toggle_layer_off {
+            compatible = "zmk,behavior-toggle-layer";
+            #binding-cells = <1>;
+            display-name = "Toggle Layer Off";
+            toggle-mode = "off"; //レイヤーを無効化するための機能
+
+        mt_exit_AML_on_tap: mt_exit_AML_on_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_exit_AML_ON_TAP";
+            bindings = <&kp>, <&kp_exit_AML>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            quick-tap-ms = <200>;
+        };
     };
 
     keymap {
@@ -141,7 +174,7 @@
             bindings = <
 &kp Q             &kp W         &kp E         &kp R               &kp T                                          &kp Y             &kp U  &lt 5 I      &kp O    &kp P
 &kp A             &kp S         &kp D         &kp F               &kp G        &kp LS(LG(S))      &kp MINUS      &kp H             &kp J  &kp K    &kp L    &kp SEMICOLON
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V               &lt 6 B      &kp COLON          &kp BACKSPACE  &kp N             &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&mt_exit_AML_on_tap LEFT_SHIFT Z  &kp X         &kp C         &kp V               &lt 6 B      &kp COLON          &kp BACKSPACE  &kp N             &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &kp INT_MUHENKAN    &lt 1 SPACE  &lt 3 TAB          &kp ENTER      &lt 2 INT_HENKAN                             &kp ESC
             >;
 
@@ -161,7 +194,7 @@
             bindings = <
 &kp JP_ASTERISK             &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS                                            &kp F11  &kp F12 &trans  &trans  &trans
 &kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp JP_PLUS &kp LC(LA(KP_NUMBER_0))      &kp F6      &kp F7   &kp F8  &kp F9  &kp F10 &trans
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD  &kp ENTER                    &kp DELETE  &kp F2   &kp F3  &kp F4  &kp F5  &kp ESCAPE
+&mt_exit_AML_on_tap LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD  &kp ENTER                    &kp DELETE  &kp F2   &kp F3  &kp F4  &kp F5  &kp ESCAPE
 &trans                      &kp NUMBER_0  &kp DOT       &trans        &trans      &trans                       &trans   &trans                                       &trans
             >;
         };
