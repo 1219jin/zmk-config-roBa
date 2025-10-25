@@ -8,6 +8,7 @@
         20 // L
         34 // Ctrl
     >;
+    require-prior-idle-ms = <200>;//キー入力中の誤爆防止 キー入力後 0.2秒トラックボールを無効化
 };
 
 / {
@@ -20,9 +21,6 @@
     };
 };
 
-&zip_temp_layer {
-    require-prior-idle-ms = <200>;//キー入力中の誤爆防止 キー入力後 0.2秒トラックボールを無効化
-};
 
 &default_transform {
     col-offset = <6>;
