@@ -6,12 +6,12 @@
         18 // J
         19 // K
         20 // L
-        // 34 // Ctrl
+        34 // Ctrl
     >;
 };
 
 &zip_temp_layer {
-    require-prior-idle-ms = <200>;
+    require-prior-idle-ms = <200>;//キー入力中の誤爆防止 キー入力後 0.2秒トラックボールを無効化
 };
 
 &default_transform {
