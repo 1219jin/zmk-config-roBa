@@ -5,6 +5,7 @@
 #include <input/processors.dtsi>
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
+#define MOUSE 6
 
 // OS設定を日本語キーボードのまま使用するための変換定義
 
