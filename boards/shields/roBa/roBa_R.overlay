@@ -17,7 +17,7 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
-        input-processors = <&zip_temp_layer 6 10000>; // トラボ使用後10秒間レイヤー6が有効
+        input-processors = <&zip_temp_layer 4 10000>; // トラボ使用後10秒間レイヤー4が有効
     };
 };
 
