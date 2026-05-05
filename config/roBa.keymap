@@ -5,7 +5,7 @@
 #include <input/processors.dtsi>
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
-#define MOUSE 4
+#define MOUSE 
 
 // OS設定を日本語キーボードのまま使用するための変換定義
 #define JP_DQUOTE AT // "
@@ -31,7 +31,8 @@
 
 &mt {
     flavor = "balanced";
-    quick-tap-ms = <0>;
+    quick-tap-ms = <150>;
+    require-prior-idle-ms = <150>;
 };
 
 // マウスキーを押下すると10秒間AMLを延長する。
@@ -139,6 +140,7 @@
             bindings = <&mo>, <&to_layer_0>;
             #binding-cells = <2>;
             tapping-term-ms = <200>;
+            require-prior-idle-ms = <150>;
         };
         tog_off: toggle_layer_off {
             compatible = "zmk,behavior-toggle-layer";
@@ -154,6 +156,7 @@
             tapping-term-ms = <200>;
             flavor = "balanced";
             quick-tap-ms = <200>;
+            require-prior-idle-ms = <150>;
         };
     };
 
