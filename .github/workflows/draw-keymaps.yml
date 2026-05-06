@@ -19,3 +19,4 @@ jobs:
       west_config_path: "config"
       amend_commit: false
       fail_on_error: false
+      parse_args: "roBa:'--ortho-layout split:true rows:4 columns:5 thumbs:3'"
