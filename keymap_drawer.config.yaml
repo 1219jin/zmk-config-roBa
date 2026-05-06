@@ -20,6 +20,10 @@ parse_config:
     "JP_RPAREN": ")"
     "JP_LBRACE": "{"
     "JP_RBRACE": "}"
+  zmk_preamble: |
+    #define KEYMAP_DRAWER
+    #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
+    #define MOUSE 4
 
 draw_config:
   dark_mode: true
