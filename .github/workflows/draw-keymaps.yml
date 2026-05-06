@@ -18,3 +18,4 @@ jobs:
       output_folder: "keymap-drawer"
       west_config_path: "config"
       amend_commit: false
+      fail_on_error: false
