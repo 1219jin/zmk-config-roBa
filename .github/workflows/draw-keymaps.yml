@@ -6,6 +6,7 @@ on:
     paths:
       - "config/*.keymap"
       - "keymap_drawer.config.yaml"
+      - ".github/workflows/draw-keymaps.yml"
 
 jobs:
   draw:
@@ -17,6 +18,7 @@ jobs:
       config_path: "keymap_drawer.config.yaml"
       output_folder: "keymap-drawer"
       west_config_path: "config"
-      json_path: ""
+      json_path: "keymap-drawer/no-such-dir"
       amend_commit: false
       fail_on_error: false
+      parse_args: "roBa:'-c 10 --layer-names default_win arrow_win default_mac arrow_mac mouse scroll bluetooth symbol num'"
