@@ -119,7 +119,7 @@
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings = <&bt BT_SEL 1 &to 7>;
+            bindings = <&bt BT_SEL 1 &to 2>;
             label = "SW_MAC";
         };
 
@@ -128,7 +128,7 @@
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings = <&bt BT_SEL 2 &to 7>;
+            bindings = <&bt BT_SEL 2 &to 2>;
             label = "SW_IPAD";
         };
     };
@@ -176,36 +176,18 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer_win {
+        default_win {
             bindings = <
 &kp Q                             &kp W         &kp E         &kp R               &kp T                                          &kp Y             &kp U  &kp I      &kp O    &kp P
 &kp A                             &kp S         &kp D         &kp F               &kp G        &kp LS(LG(S))      &kp MINUS      &kp H             &kp J  &lt 5 K    &kp L    &kp SEMICOLON
-&mt_exit_AML_on_tap LEFT_SHIFT Z  &kp X         &kp C         &kp V               &lt 6 B      &kp LEFT_ALT       &kp BACKSPACE  &kp N             &kp M  &kp COMMA  &kp DOT  &lt 1 SLASH
-&kp LCTRL                         &kp LEFT_WIN  &kp LEFT_ALT  &lt 2 INT_MUHENKAN  &lt 1 SPACE  &lt 3 TAB          &kp ENTER      &lt 2 INT_HENKAN                             &kp RCTRL
+&mt_exit_AML_on_tap LEFT_SHIFT Z  &kp X         &kp C         &kp V               &lt 6 B      &kp LEFT_ALT       &kp BACKSPACE  &kp N             &kp M  &kp COMMA  &kp DOT  &lt 7 SLASH
+&kp LCTRL                         &kp LEFT_WIN  &kp LEFT_ALT  &lt 8 INT_MUHENKAN  &lt 7 SPACE  &lt 1 TAB          &kp ENTER      &lt 8 INT_HENKAN                             &kp RCTRL
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
         };
 
-        SYMBOL {
-            bindings = <
-&trans     &kp EXCLAMATION  &kp JP_DQUOTE  &kp HASH          &trans                       &kp JP_LPAREN    &kp JP_RPAREN    &kp MINUS      &kp JP_CARET   &kp JP_YEN
-&kp TILDE  &kp DLLR         &kp PERCENT    &kp JP_AMPERSAND  &trans  &trans      &trans   &kp JP_LBRACE    &kp JP_RBRACE    &kp SEMICOLON  &kp JP_COLON   &kp JP_AT
-&kp GRAVE  &kp JP_QUOTE     &kp JP_LPAREN  &kp JP_RPAREN     &trans  &trans      &kp DEL  &kp JP_LBRACKET  &kp JP_RBRACKET  &kp PERIOD     &kp JP_DQUOTE  &kp JP_UNDERSCORE
-&trans     &trans           &trans         &trans            &trans  &trans      &trans   &trans                                                          &trans
-            >;
-        };
-
-        NUM {
-            bindings = <
-&kp JP_ASTERISK                             &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS                                             &kp F11  &kp F12  &trans  &trans   &trans
-&kp SLASH                                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp JP_PLUS  &kp LC(LA(KP_NUMBER_0))      &kp F6      &kp F7   &kp F8   &kp F9  &kp F10  &trans
-&mt_exit_AML_on_tap LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD   &kp ENTER                    &kp DELETE  &kp F2   &kp F3   &kp F4  &kp F5   &kp ESCAPE
-&trans                                      &kp KP_NUMBER_0  &kp DOT          &trans           &trans       &trans                       &trans      &trans                             &trans
-            >;
-        };
-
-        ARROW {
+        arrow_win {
             bindings = <
 &kp ESCAPE        &kp LS(LG(TAB))     &kp LG(UP_ARROW)    &kp LG(TAB)          &trans                                 &kp LA(LS(TAB))  &kp LS(TAB)  &kp UP    &kp TAB    &kp LA(TAB)
 &kp LG(LC(LEFT))  &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &kp LC(LG(RIGHT))  &trans      &trans  &kp HOME         &kp LEFT     &kp DOWN  &kp RIGHT  &kp END
@@ -216,48 +198,19 @@
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
 
-        MOUSE {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &mkp MB3  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &trans    &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
-            >;
-        };
-
-        SCROLL {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
-            >;
-        };
-
-        Bluetooth {
-            // 左手上段: 有線切替(Q=Win, W=Mac) / 右手上段: BT接続先選択(Y-P)
-            // 左手中段: BT+OS切替(A=Win, S=Mac, D=iPad) / 右手中段: 同じ
-            // → BキーHoldのまま左手AまたはSでWin/Mac切替が完結
-            bindings = <
-&to 0         &to 7         &trans        &trans  &trans                                &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&sw_win       &sw_mac       &sw_ipad      &trans  &trans  &trans           &trans       &sw_win       &sw_mac       &sw_ipad      &trans        &trans
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans  &bootloader      &trans       &trans        &trans        &trans        &bt BT_CLR    &trans
-&trans        &trans        &trans        &trans  &trans  &trans           &trans       &bt BT_CLR_ALL
-            >;
-        };
-
         default_mac {
+            // Mac固有キーのみ明示。残りはLayer 0に透過。
             bindings = <
-&trans        &trans        &trans            &trans       &trans                         &trans       &trans  &trans  &trans  &trans
+&trans        &trans        &trans            &trans       &trans                                    &trans  &trans  &trans  &trans  &trans
 &trans        &trans        &trans            &trans       &trans  &kp LG(LC(LS(NUMBER_4)))  &trans  &trans  &trans  &trans  &trans  &trans
 &trans        &trans        &trans            &trans       &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &lt 2 LANG2  &trans  &lt 8 TAB                &trans  &lt 2 LANG1                      &trans
+&kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &lt 8 LANG2  &trans  &lt 3 TAB                &trans  &lt 8 LANG1                      &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
         };
 
-        ARROW_MAC {
+        arrow_mac {
             bindings = <
 &kp ESCAPE      &kp LS(LG(TAB))   &kp LC(LA(UP))    &kp LG(TAB)        &trans                             &kp LA(LS(TAB))  &kp LS(TAB)  &kp UP    &kp TAB    &kp LA(TAB)
 &kp LC(LEFT)    &kp LC(LA(LEFT))  &kp LC(LA(DOWN))  &kp LC(LA(RIGHT))  &kp LC(RIGHT)  &trans      &trans  &kp HOME         &kp LEFT     &kp DOWN  &kp RIGHT  &kp END
@@ -266,6 +219,53 @@
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+        };
+
+        mouse {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &mkp MB3  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &trans    &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+            >;
+        };
+
+        scroll {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+            >;
+        };
+
+        bluetooth {
+            // 右手上段: Y=sw_win(BT0+Win) U=sw_mac(BT1+Mac) I=sw_ipad(BT2+Mac)
+            // 右手中段: H=有線→Win J=有線→Mac
+            bindings = <
+&trans        &trans        &trans        &trans  &trans                         &sw_win  &sw_mac  &sw_ipad  &bt BT_SEL 3  &bt BT_SEL 4
+&trans        &trans        &trans        &trans  &trans  &trans      &trans     &to 0    &to 2    &trans    &trans        &trans
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans  &bootloader &trans     &trans   &trans   &trans    &bt BT_CLR    &trans
+&trans        &trans        &trans        &trans  &trans  &trans      &trans     &bt BT_CLR_ALL
+            >;
+        };
+
+        symbol {
+            bindings = <
+&trans     &kp EXCLAMATION  &kp JP_DQUOTE  &kp HASH          &trans                       &kp JP_LPAREN    &kp JP_RPAREN    &kp MINUS      &kp JP_CARET   &kp JP_YEN
+&kp TILDE  &kp DLLR         &kp PERCENT    &kp JP_AMPERSAND  &trans  &trans      &trans   &kp JP_LBRACE    &kp JP_RBRACE    &kp SEMICOLON  &kp JP_COLON   &kp JP_AT
+&kp GRAVE  &kp JP_QUOTE     &kp JP_LPAREN  &kp JP_RPAREN     &trans  &trans      &kp DEL  &kp JP_LBRACKET  &kp JP_RBRACKET  &kp PERIOD     &kp JP_DQUOTE  &kp JP_UNDERSCORE
+&trans     &trans           &trans         &trans            &trans  &trans      &trans   &trans                                                          &trans
+            >;
+        };
+
+        num {
+            bindings = <
+&kp JP_ASTERISK                             &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS                                             &kp F11  &kp F12  &trans  &trans   &trans
+&kp SLASH                                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp JP_PLUS  &kp LC(LA(KP_NUMBER_0))      &kp F6      &kp F7   &kp F8   &kp F9  &kp F10  &trans
+&mt_exit_AML_on_tap LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD   &kp ENTER                    &kp DELETE  &kp F2   &kp F3   &kp F4  &kp F5   &kp ESCAPE
+&trans                                      &kp KP_NUMBER_0  &kp DOT          &trans           &trans       &trans                       &trans      &trans                             &trans
+            >;
         };
     };
 };
