@@ -1,0 +1,28 @@
+parse_config:
+  raw_binding_map:
+    "JP_DQUOTE": '"'
+    "JP_AMPERSAND": "&"
+    "JP_QUOTE": "'"
+    "JP_EQUAL": "="
+    "JP_CARET": "^"
+    "JP_YEN": "¥"
+    "JP_PLUS": "+"
+    "JP_TILDE": "~"
+    "JP_PIPE": "|"
+    "JP_AT": "@"
+    "JP_COLON": ":"
+    "JP_ASTERISK": "*"
+    "JP_BACKQUOTE": "`"
+    "JP_UNDERSCORE": "_"
+    "JP_LBRACKET": "["
+    "JP_RBRACKET": "]"
+    "JP_LPAREN": "("
+    "JP_RPAREN": ")"
+    "JP_LBRACE": "{"
+    "JP_RBRACE": "}"
+
+draw_config:
+  dark_mode: true
+  key_w: 60
+  key_h: 56
+  draw_key_sides: false
