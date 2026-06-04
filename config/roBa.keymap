@@ -35,11 +35,6 @@
             key-positions = <12 13>;
         };
 
-        Ctrl_w {
-            bindings = <&kp LC(W)>;
-            key-positions = <5 6>;
-        };
-
         Alt_Left {
             bindings = <&mkp MB4>;
             key-positions = <17 18>;
@@ -53,6 +48,11 @@
         Bluetooth {
             bindings = <&lt 6 SPACE>;
             key-positions = <37 38 39>;
+        };
+
+        escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <18 19>;
         };
     };
 
@@ -190,10 +190,10 @@
 
         arrow_mac {
             bindings = <
-&kp ESCAPE      &kp LS(LC(TAB))   &kp LC(LA(UP))    &kp LC(TAB)        &trans                             &kp LA(LS(TAB))  &kp PAGE_UP  &kp UP    &kp PAGE_DOWN    &kp LA(TAB)
-&kp LC(LEFT)    &kp LC(LA(LEFT))  &kp LC(LA(DOWN))  &kp LC(LA(RIGHT))  &kp LC(RIGHT)  &trans      &trans  &kp HOME         &kp LEFT     &kp DOWN  &kp RIGHT  &kp END
-&kp LEFT_SHIFT  &kp LG(LEFT_BRACKET)            &kp LG(T)            &kp LG(RIGHT_BRACKET)             &trans         &trans      &trans  &trans           &trans       &trans    &trans     &trans
-&trans          &trans            &trans            &trans             &trans         &trans      &trans  &trans                                             &trans
+&kp ESCAPE      &kp LS(LC(TAB))       &kp LC(LA(UP))    &kp LC(TAB)            &trans                             &kp LA(LS(TAB))  &kp PAGE_UP  &kp UP    &kp PAGE_DOWN  &kp LA(TAB)
+&kp LC(LEFT)    &kp LC(LA(LEFT))      &kp LC(LA(DOWN))  &kp LC(LA(RIGHT))      &kp LC(RIGHT)  &trans      &trans  &kp HOME         &kp LEFT     &kp DOWN  &kp RIGHT      &kp END
+&kp LEFT_SHIFT  &kp LG(LEFT_BRACKET)  &kp LG(T)         &kp LG(RIGHT_BRACKET)  &trans         &trans      &trans  &trans           &trans       &trans    &trans         &trans
+&trans          &trans                &trans            &trans                 &trans         &trans      &trans  &trans                                                 &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
