@@ -166,10 +166,10 @@
 
         arrow_win {
             bindings = <
-&kp ESCAPE        &kp LS(LG(TAB))     &kp LG(UP_ARROW)    &kp LG(TAB)          &trans                                 &kp LA(LS(TAB))  &kp LS(TAB)  &kp UP    &kp TAB    &kp LA(TAB)
-&kp LG(LC(LEFT))  &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &kp LC(LG(RIGHT))  &trans      &trans  &kp HOME         &kp LEFT     &kp DOWN  &kp RIGHT  &kp END
-&kp LEFT_SHIFT    &trans              &trans              &trans               &trans             &trans      &trans  &trans           &trans       &trans    &trans     &trans
-&trans            &trans              &trans              &trans               &trans             &trans      &trans  &trans                                             &trans
+&kp ESCAPE        &kp LS(LC(TAB))     &kp LG(UP_ARROW)    &kp LC(TAB)          &trans                                 &kp LA(LS(TAB))  &kp PAGE_UP  &kp UP    &kp PAGE_DOWN  &kp LA(TAB)
+&kp LG(LC(LEFT))  &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &kp LC(LG(RIGHT))  &trans      &trans  &kp HOME         &kp LEFT     &kp DOWN  &kp RIGHT      &kp END
+&kp LEFT_SHIFT    &kp LA(LEFT)        &kp LC(T)           &kp LA(RIGHT)        &trans             &trans      &trans  &trans           &trans       &trans    &trans         &trans
+&trans            &trans              &trans              &trans               &trans             &trans      &trans  &trans                                                 &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
