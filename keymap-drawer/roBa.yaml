@@ -46,14 +46,14 @@ layers:
   - RCTRL
   arrow_win:
   - ESCAPE
-  - Sft+Gui+TAB
+  - Sft+Ctl+TAB
   - Gui+UP ARROW
-  - Gui+TAB
+  - Ctl+TAB
   - {t: ▽, type: trans}
   - Alt+Sft+TAB
-  - Sft+TAB
+  - PAGE UP
   - UP
-  - TAB
+  - PAGE DOWN
   - Alt+TAB
   - Gui+Ctl+LEFT
   - Gui+LEFT ARROW
@@ -68,9 +68,9 @@ layers:
   - RIGHT
   - END
   - LEFT SHIFT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Alt+LEFT
+  - Ctl+T
+  - Alt+RIGHT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
