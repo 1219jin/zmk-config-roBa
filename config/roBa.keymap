@@ -190,9 +190,9 @@
 
         arrow_mac {
             bindings = <
-&kp ESCAPE      &kp LS(LG(TAB))   &kp LC(LA(UP))    &kp LG(TAB)        &trans                             &kp LA(LS(TAB))  &kp LS(TAB)  &kp UP    &kp TAB    &kp LA(TAB)
+&kp ESCAPE      &kp LS(LC(TAB))   &kp LC(LA(UP))    &kp LC(TAB)        &trans                             &kp LA(LS(TAB))  &kp PAGE_UP  &kp UP    &kp PAGE_DOWN    &kp LA(TAB)
 &kp LC(LEFT)    &kp LC(LA(LEFT))  &kp LC(LA(DOWN))  &kp LC(LA(RIGHT))  &kp LC(RIGHT)  &trans      &trans  &kp HOME         &kp LEFT     &kp DOWN  &kp RIGHT  &kp END
-&kp LEFT_SHIFT  &trans            &trans            &trans             &trans         &trans      &trans  &trans           &trans       &trans    &trans     &trans
+&kp LEFT_SHIFT  &kp LG(LEFT_BRACKET)            &kp LG(T)            &kp LG(RIGHT_BRACKET)             &trans         &trans      &trans  &trans           &trans       &trans    &trans     &trans
 &trans          &trans            &trans            &trans             &trans         &trans      &trans  &trans                                             &trans
             >;
 
