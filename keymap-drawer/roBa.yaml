@@ -134,14 +134,14 @@ layers:
   - {t: ▽, type: trans}
   arrow_mac:
   - ESCAPE
-  - Sft+Gui+TAB
+  - Sft+Ctl+TAB
   - Ctl+Alt+UP
-  - Gui+TAB
+  - Ctl+TAB
   - {t: ▽, type: trans}
   - Alt+Sft+TAB
-  - Sft+TAB
+  - PAGE UP
   - UP
-  - TAB
+  - PAGE DOWN
   - Alt+TAB
   - Ctl+LEFT
   - Ctl+Alt+LEFT
@@ -156,9 +156,9 @@ layers:
   - RIGHT
   - END
   - LEFT SHIFT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Gui+[
+  - Gui+T
+  - Gui+]
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
