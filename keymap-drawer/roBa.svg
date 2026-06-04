@@ -346,22 +346,18 @@ path.combo { stroke: #7f7f7f; }
 <text x="168" y="88" class="combo tap">Sft+TAB</text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="518" y="26" width="28" height="26" class="combo"/>
-<text x="532" y="39" class="combo tap">Ctl+W</text>
-</g>
-<g class="combo combopos-3">
 <rect rx="6" ry="6" x="518" y="82" width="28" height="26" class="combo"/>
 <text x="532" y="95" class="combo tap">
 <tspan x="532" dy="-0.6em">&amp;mkp</tspan><tspan x="532" dy="1.2em">MB4</tspan>
 </text>
 </g>
-<g class="combo combopos-4">
+<g class="combo combopos-3">
 <rect rx="6" ry="6" x="518" y="138" width="28" height="26" class="combo"/>
 <text x="532" y="151" class="combo tap">
 <tspan x="532" dy="-0.6em">Sft+Ctl</tspan><tspan x="532" dy="1.2em">+1</tspan>
 </text>
 </g>
-<g class="combo combopos-5">
+<g class="combo combopos-4">
 <path d="M271,234 l-44,-6" class="combo"/>
 <path d="M271,234 l44,9" class="combo"/>
 <rect rx="6" ry="6" x="257" y="221" width="28" height="26" class="combo"/>
@@ -369,6 +365,10 @@ path.combo { stroke: #7f7f7f; }
 <a href="#bluetooth">
 <text x="271" y="245" class="combo hold layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
 </a></g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="574" y="75" width="28" height="26" class="combo"/>
+<text x="588" y="88" class="combo tap">ESCAPE</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 339)" class="layer-arrow_win">
@@ -580,22 +580,18 @@ path.combo { stroke: #7f7f7f; }
 <text x="168" y="88" class="combo tap">Sft+TAB</text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="518" y="26" width="28" height="26" class="combo"/>
-<text x="532" y="39" class="combo tap">Ctl+W</text>
-</g>
-<g class="combo combopos-3">
 <rect rx="6" ry="6" x="518" y="82" width="28" height="26" class="combo"/>
 <text x="532" y="95" class="combo tap">
 <tspan x="532" dy="-0.6em">&amp;mkp</tspan><tspan x="532" dy="1.2em">MB4</tspan>
 </text>
 </g>
-<g class="combo combopos-4">
+<g class="combo combopos-3">
 <rect rx="6" ry="6" x="518" y="138" width="28" height="26" class="combo"/>
 <text x="532" y="151" class="combo tap">
 <tspan x="532" dy="-0.6em">Sft+Ctl</tspan><tspan x="532" dy="1.2em">+1</tspan>
 </text>
 </g>
-<g class="combo combopos-5">
+<g class="combo combopos-4">
 <path d="M271,234 l-44,-6" class="combo"/>
 <path d="M271,234 l44,9" class="combo"/>
 <rect rx="6" ry="6" x="257" y="221" width="28" height="26" class="combo"/>
@@ -603,6 +599,10 @@ path.combo { stroke: #7f7f7f; }
 <a href="#bluetooth">
 <text x="271" y="245" class="combo hold layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
 </a></g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="574" y="75" width="28" height="26" class="combo"/>
+<text x="588" y="88" class="combo tap">ESCAPE</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 678)" class="layer-default_mac">
@@ -803,22 +803,18 @@ path.combo { stroke: #7f7f7f; }
 <text x="168" y="88" class="combo tap">Sft+TAB</text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="518" y="26" width="28" height="26" class="combo"/>
-<text x="532" y="39" class="combo tap">Ctl+W</text>
-</g>
-<g class="combo combopos-3">
 <rect rx="6" ry="6" x="518" y="82" width="28" height="26" class="combo"/>
 <text x="532" y="95" class="combo tap">
 <tspan x="532" dy="-0.6em">&amp;mkp</tspan><tspan x="532" dy="1.2em">MB4</tspan>
 </text>
 </g>
-<g class="combo combopos-4">
+<g class="combo combopos-3">
 <rect rx="6" ry="6" x="518" y="138" width="28" height="26" class="combo"/>
 <text x="532" y="151" class="combo tap">
 <tspan x="532" dy="-0.6em">Sft+Ctl</tspan><tspan x="532" dy="1.2em">+1</tspan>
 </text>
 </g>
-<g class="combo combopos-5">
+<g class="combo combopos-4">
 <path d="M271,234 l-44,-6" class="combo"/>
 <path d="M271,234 l44,9" class="combo"/>
 <rect rx="6" ry="6" x="257" y="221" width="28" height="26" class="combo"/>
@@ -826,6 +822,10 @@ path.combo { stroke: #7f7f7f; }
 <a href="#bluetooth">
 <text x="271" y="245" class="combo hold layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
 </a></g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="574" y="75" width="28" height="26" class="combo"/>
+<text x="588" y="88" class="combo tap">ESCAPE</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1017)" class="layer-arrow_mac">
@@ -1033,22 +1033,18 @@ path.combo { stroke: #7f7f7f; }
 <text x="168" y="88" class="combo tap">Sft+TAB</text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="518" y="26" width="28" height="26" class="combo"/>
-<text x="532" y="39" class="combo tap">Ctl+W</text>
-</g>
-<g class="combo combopos-3">
 <rect rx="6" ry="6" x="518" y="82" width="28" height="26" class="combo"/>
 <text x="532" y="95" class="combo tap">
 <tspan x="532" dy="-0.6em">&amp;mkp</tspan><tspan x="532" dy="1.2em">MB4</tspan>
 </text>
 </g>
-<g class="combo combopos-4">
+<g class="combo combopos-3">
 <rect rx="6" ry="6" x="518" y="138" width="28" height="26" class="combo"/>
 <text x="532" y="151" class="combo tap">
 <tspan x="532" dy="-0.6em">Sft+Ctl</tspan><tspan x="532" dy="1.2em">+1</tspan>
 </text>
 </g>
-<g class="combo combopos-5">
+<g class="combo combopos-4">
 <path d="M271,234 l-44,-6" class="combo"/>
 <path d="M271,234 l44,9" class="combo"/>
 <rect rx="6" ry="6" x="257" y="221" width="28" height="26" class="combo"/>
@@ -1056,6 +1052,10 @@ path.combo { stroke: #7f7f7f; }
 <a href="#bluetooth">
 <text x="271" y="245" class="combo hold layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
 </a></g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="574" y="75" width="28" height="26" class="combo"/>
+<text x="588" y="88" class="combo tap">ESCAPE</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1355)" class="layer-mouse">
@@ -1248,22 +1248,18 @@ path.combo { stroke: #7f7f7f; }
 <text x="168" y="88" class="combo tap">Sft+TAB</text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="518" y="26" width="28" height="26" class="combo"/>
-<text x="532" y="39" class="combo tap">Ctl+W</text>
-</g>
-<g class="combo combopos-3">
 <rect rx="6" ry="6" x="518" y="82" width="28" height="26" class="combo"/>
 <text x="532" y="95" class="combo tap">
 <tspan x="532" dy="-0.6em">&amp;mkp</tspan><tspan x="532" dy="1.2em">MB4</tspan>
 </text>
 </g>
-<g class="combo combopos-4">
+<g class="combo combopos-3">
 <rect rx="6" ry="6" x="518" y="138" width="28" height="26" class="combo"/>
 <text x="532" y="151" class="combo tap">
 <tspan x="532" dy="-0.6em">Sft+Ctl</tspan><tspan x="532" dy="1.2em">+1</tspan>
 </text>
 </g>
-<g class="combo combopos-5">
+<g class="combo combopos-4">
 <path d="M271,234 l-44,-6" class="combo"/>
 <path d="M271,234 l44,9" class="combo"/>
 <rect rx="6" ry="6" x="257" y="221" width="28" height="26" class="combo"/>
@@ -1271,6 +1267,10 @@ path.combo { stroke: #7f7f7f; }
 <a href="#bluetooth">
 <text x="271" y="245" class="combo hold layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
 </a></g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="574" y="75" width="28" height="26" class="combo"/>
+<text x="588" y="88" class="combo tap">ESCAPE</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1694)" class="layer-scroll">
@@ -1456,22 +1456,18 @@ path.combo { stroke: #7f7f7f; }
 <text x="168" y="88" class="combo tap">Sft+TAB</text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="518" y="26" width="28" height="26" class="combo"/>
-<text x="532" y="39" class="combo tap">Ctl+W</text>
-</g>
-<g class="combo combopos-3">
 <rect rx="6" ry="6" x="518" y="82" width="28" height="26" class="combo"/>
 <text x="532" y="95" class="combo tap">
 <tspan x="532" dy="-0.6em">&amp;mkp</tspan><tspan x="532" dy="1.2em">MB4</tspan>
 </text>
 </g>
-<g class="combo combopos-4">
+<g class="combo combopos-3">
 <rect rx="6" ry="6" x="518" y="138" width="28" height="26" class="combo"/>
 <text x="532" y="151" class="combo tap">
 <tspan x="532" dy="-0.6em">Sft+Ctl</tspan><tspan x="532" dy="1.2em">+1</tspan>
 </text>
 </g>
-<g class="combo combopos-5">
+<g class="combo combopos-4">
 <path d="M271,234 l-44,-6" class="combo"/>
 <path d="M271,234 l44,9" class="combo"/>
 <rect rx="6" ry="6" x="257" y="221" width="28" height="26" class="combo"/>
@@ -1479,6 +1475,10 @@ path.combo { stroke: #7f7f7f; }
 <a href="#bluetooth">
 <text x="271" y="245" class="combo hold layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
 </a></g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="574" y="75" width="28" height="26" class="combo"/>
+<text x="588" y="88" class="combo tap">ESCAPE</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 2033)" class="layer-bluetooth">
@@ -1674,22 +1674,18 @@ path.combo { stroke: #7f7f7f; }
 <text x="168" y="88" class="combo tap">Sft+TAB</text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="518" y="26" width="28" height="26" class="combo"/>
-<text x="532" y="39" class="combo tap">Ctl+W</text>
-</g>
-<g class="combo combopos-3">
 <rect rx="6" ry="6" x="518" y="82" width="28" height="26" class="combo"/>
 <text x="532" y="95" class="combo tap">
 <tspan x="532" dy="-0.6em">&amp;mkp</tspan><tspan x="532" dy="1.2em">MB4</tspan>
 </text>
 </g>
-<g class="combo combopos-4">
+<g class="combo combopos-3">
 <rect rx="6" ry="6" x="518" y="138" width="28" height="26" class="combo"/>
 <text x="532" y="151" class="combo tap">
 <tspan x="532" dy="-0.6em">Sft+Ctl</tspan><tspan x="532" dy="1.2em">+1</tspan>
 </text>
 </g>
-<g class="combo combopos-5">
+<g class="combo combopos-4">
 <path d="M271,234 l-44,-6" class="combo"/>
 <path d="M271,234 l44,9" class="combo"/>
 <rect rx="6" ry="6" x="257" y="221" width="28" height="26" class="combo"/>
@@ -1697,6 +1693,10 @@ path.combo { stroke: #7f7f7f; }
 <a href="#bluetooth">
 <text x="271" y="245" class="combo hold layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
 </a></g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="574" y="75" width="28" height="26" class="combo"/>
+<text x="588" y="88" class="combo tap">ESCAPE</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 2372)" class="layer-symbol">
@@ -1887,22 +1887,18 @@ path.combo { stroke: #7f7f7f; }
 <text x="168" y="88" class="combo tap">Sft+TAB</text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="518" y="26" width="28" height="26" class="combo"/>
-<text x="532" y="39" class="combo tap">Ctl+W</text>
-</g>
-<g class="combo combopos-3">
 <rect rx="6" ry="6" x="518" y="82" width="28" height="26" class="combo"/>
 <text x="532" y="95" class="combo tap">
 <tspan x="532" dy="-0.6em">&amp;mkp</tspan><tspan x="532" dy="1.2em">MB4</tspan>
 </text>
 </g>
-<g class="combo combopos-4">
+<g class="combo combopos-3">
 <rect rx="6" ry="6" x="518" y="138" width="28" height="26" class="combo"/>
 <text x="532" y="151" class="combo tap">
 <tspan x="532" dy="-0.6em">Sft+Ctl</tspan><tspan x="532" dy="1.2em">+1</tspan>
 </text>
 </g>
-<g class="combo combopos-5">
+<g class="combo combopos-4">
 <path d="M271,234 l-44,-6" class="combo"/>
 <path d="M271,234 l44,9" class="combo"/>
 <rect rx="6" ry="6" x="257" y="221" width="28" height="26" class="combo"/>
@@ -1910,6 +1906,10 @@ path.combo { stroke: #7f7f7f; }
 <a href="#bluetooth">
 <text x="271" y="245" class="combo hold layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
 </a></g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="574" y="75" width="28" height="26" class="combo"/>
+<text x="588" y="88" class="combo tap">ESCAPE</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 2711)" class="layer-num">
@@ -2120,22 +2120,18 @@ path.combo { stroke: #7f7f7f; }
 <text x="168" y="88" class="combo tap">Sft+TAB</text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="518" y="26" width="28" height="26" class="combo"/>
-<text x="532" y="39" class="combo tap">Ctl+W</text>
-</g>
-<g class="combo combopos-3">
 <rect rx="6" ry="6" x="518" y="82" width="28" height="26" class="combo"/>
 <text x="532" y="95" class="combo tap">
 <tspan x="532" dy="-0.6em">&amp;mkp</tspan><tspan x="532" dy="1.2em">MB4</tspan>
 </text>
 </g>
-<g class="combo combopos-4">
+<g class="combo combopos-3">
 <rect rx="6" ry="6" x="518" y="138" width="28" height="26" class="combo"/>
 <text x="532" y="151" class="combo tap">
 <tspan x="532" dy="-0.6em">Sft+Ctl</tspan><tspan x="532" dy="1.2em">+1</tspan>
 </text>
 </g>
-<g class="combo combopos-5">
+<g class="combo combopos-4">
 <path d="M271,234 l-44,-6" class="combo"/>
 <path d="M271,234 l44,9" class="combo"/>
 <rect rx="6" ry="6" x="257" y="221" width="28" height="26" class="combo"/>
@@ -2143,6 +2139,10 @@ path.combo { stroke: #7f7f7f; }
 <a href="#bluetooth">
 <text x="271" y="245" class="combo hold layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
 </a></g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="574" y="75" width="28" height="26" class="combo"/>
+<text x="588" y="88" class="combo tap">ESCAPE</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 3050)" class="layer-9">
@@ -2329,22 +2329,18 @@ path.combo { stroke: #7f7f7f; }
 <text x="168" y="88" class="combo tap">Sft+TAB</text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="518" y="26" width="28" height="26" class="combo"/>
-<text x="532" y="39" class="combo tap">Ctl+W</text>
-</g>
-<g class="combo combopos-3">
 <rect rx="6" ry="6" x="518" y="82" width="28" height="26" class="combo"/>
 <text x="532" y="95" class="combo tap">
 <tspan x="532" dy="-0.6em">&amp;mkp</tspan><tspan x="532" dy="1.2em">MB4</tspan>
 </text>
 </g>
-<g class="combo combopos-4">
+<g class="combo combopos-3">
 <rect rx="6" ry="6" x="518" y="138" width="28" height="26" class="combo"/>
 <text x="532" y="151" class="combo tap">
 <tspan x="532" dy="-0.6em">Sft+Ctl</tspan><tspan x="532" dy="1.2em">+1</tspan>
 </text>
 </g>
-<g class="combo combopos-5">
+<g class="combo combopos-4">
 <path d="M271,234 l-44,-6" class="combo"/>
 <path d="M271,234 l44,9" class="combo"/>
 <rect rx="6" ry="6" x="257" y="221" width="28" height="26" class="combo"/>
@@ -2352,6 +2348,10 @@ path.combo { stroke: #7f7f7f; }
 <a href="#bluetooth">
 <text x="271" y="245" class="combo hold layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
 </a></g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="574" y="75" width="28" height="26" class="combo"/>
+<text x="588" y="88" class="combo tap">ESCAPE</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 3388)" class="layer-10">
@@ -2538,22 +2538,18 @@ path.combo { stroke: #7f7f7f; }
 <text x="168" y="88" class="combo tap">Sft+TAB</text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="518" y="26" width="28" height="26" class="combo"/>
-<text x="532" y="39" class="combo tap">Ctl+W</text>
-</g>
-<g class="combo combopos-3">
 <rect rx="6" ry="6" x="518" y="82" width="28" height="26" class="combo"/>
 <text x="532" y="95" class="combo tap">
 <tspan x="532" dy="-0.6em">&amp;mkp</tspan><tspan x="532" dy="1.2em">MB4</tspan>
 </text>
 </g>
-<g class="combo combopos-4">
+<g class="combo combopos-3">
 <rect rx="6" ry="6" x="518" y="138" width="28" height="26" class="combo"/>
 <text x="532" y="151" class="combo tap">
 <tspan x="532" dy="-0.6em">Sft+Ctl</tspan><tspan x="532" dy="1.2em">+1</tspan>
 </text>
 </g>
-<g class="combo combopos-5">
+<g class="combo combopos-4">
 <path d="M271,234 l-44,-6" class="combo"/>
 <path d="M271,234 l44,9" class="combo"/>
 <rect rx="6" ry="6" x="257" y="221" width="28" height="26" class="combo"/>
@@ -2561,6 +2557,10 @@ path.combo { stroke: #7f7f7f; }
 <a href="#bluetooth">
 <text x="271" y="245" class="combo hold layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
 </a></g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="574" y="75" width="28" height="26" class="combo"/>
+<text x="588" y="88" class="combo tap">ESCAPE</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 3727)" class="layer-11">
@@ -2747,22 +2747,18 @@ path.combo { stroke: #7f7f7f; }
 <text x="168" y="88" class="combo tap">Sft+TAB</text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="518" y="26" width="28" height="26" class="combo"/>
-<text x="532" y="39" class="combo tap">Ctl+W</text>
-</g>
-<g class="combo combopos-3">
 <rect rx="6" ry="6" x="518" y="82" width="28" height="26" class="combo"/>
 <text x="532" y="95" class="combo tap">
 <tspan x="532" dy="-0.6em">&amp;mkp</tspan><tspan x="532" dy="1.2em">MB4</tspan>
 </text>
 </g>
-<g class="combo combopos-4">
+<g class="combo combopos-3">
 <rect rx="6" ry="6" x="518" y="138" width="28" height="26" class="combo"/>
 <text x="532" y="151" class="combo tap">
 <tspan x="532" dy="-0.6em">Sft+Ctl</tspan><tspan x="532" dy="1.2em">+1</tspan>
 </text>
 </g>
-<g class="combo combopos-5">
+<g class="combo combopos-4">
 <path d="M271,234 l-44,-6" class="combo"/>
 <path d="M271,234 l44,9" class="combo"/>
 <rect rx="6" ry="6" x="257" y="221" width="28" height="26" class="combo"/>
@@ -2770,6 +2766,10 @@ path.combo { stroke: #7f7f7f; }
 <a href="#bluetooth">
 <text x="271" y="245" class="combo hold layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
 </a></g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="574" y="75" width="28" height="26" class="combo"/>
+<text x="588" y="88" class="combo tap">ESCAPE</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 4066)" class="layer-12">
@@ -2956,22 +2956,18 @@ path.combo { stroke: #7f7f7f; }
 <text x="168" y="88" class="combo tap">Sft+TAB</text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="518" y="26" width="28" height="26" class="combo"/>
-<text x="532" y="39" class="combo tap">Ctl+W</text>
-</g>
-<g class="combo combopos-3">
 <rect rx="6" ry="6" x="518" y="82" width="28" height="26" class="combo"/>
 <text x="532" y="95" class="combo tap">
 <tspan x="532" dy="-0.6em">&amp;mkp</tspan><tspan x="532" dy="1.2em">MB4</tspan>
 </text>
 </g>
-<g class="combo combopos-4">
+<g class="combo combopos-3">
 <rect rx="6" ry="6" x="518" y="138" width="28" height="26" class="combo"/>
 <text x="532" y="151" class="combo tap">
 <tspan x="532" dy="-0.6em">Sft+Ctl</tspan><tspan x="532" dy="1.2em">+1</tspan>
 </text>
 </g>
-<g class="combo combopos-5">
+<g class="combo combopos-4">
 <path d="M271,234 l-44,-6" class="combo"/>
 <path d="M271,234 l44,9" class="combo"/>
 <rect rx="6" ry="6" x="257" y="221" width="28" height="26" class="combo"/>
@@ -2979,6 +2975,10 @@ path.combo { stroke: #7f7f7f; }
 <a href="#bluetooth">
 <text x="271" y="245" class="combo hold layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
 </a></g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="574" y="75" width="28" height="26" class="combo"/>
+<text x="588" y="88" class="combo tap">ESCAPE</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 4405)" class="layer-13">
@@ -3165,22 +3165,18 @@ path.combo { stroke: #7f7f7f; }
 <text x="168" y="88" class="combo tap">Sft+TAB</text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="518" y="26" width="28" height="26" class="combo"/>
-<text x="532" y="39" class="combo tap">Ctl+W</text>
-</g>
-<g class="combo combopos-3">
 <rect rx="6" ry="6" x="518" y="82" width="28" height="26" class="combo"/>
 <text x="532" y="95" class="combo tap">
 <tspan x="532" dy="-0.6em">&amp;mkp</tspan><tspan x="532" dy="1.2em">MB4</tspan>
 </text>
 </g>
-<g class="combo combopos-4">
+<g class="combo combopos-3">
 <rect rx="6" ry="6" x="518" y="138" width="28" height="26" class="combo"/>
 <text x="532" y="151" class="combo tap">
 <tspan x="532" dy="-0.6em">Sft+Ctl</tspan><tspan x="532" dy="1.2em">+1</tspan>
 </text>
 </g>
-<g class="combo combopos-5">
+<g class="combo combopos-4">
 <path d="M271,234 l-44,-6" class="combo"/>
 <path d="M271,234 l44,9" class="combo"/>
 <rect rx="6" ry="6" x="257" y="221" width="28" height="26" class="combo"/>
@@ -3188,6 +3184,10 @@ path.combo { stroke: #7f7f7f; }
 <a href="#bluetooth">
 <text x="271" y="245" class="combo hold layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
 </a></g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="574" y="75" width="28" height="26" class="combo"/>
+<text x="588" y="88" class="combo tap">ESCAPE</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 4744)" class="layer-14">
@@ -3374,22 +3374,18 @@ path.combo { stroke: #7f7f7f; }
 <text x="168" y="88" class="combo tap">Sft+TAB</text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="518" y="26" width="28" height="26" class="combo"/>
-<text x="532" y="39" class="combo tap">Ctl+W</text>
-</g>
-<g class="combo combopos-3">
 <rect rx="6" ry="6" x="518" y="82" width="28" height="26" class="combo"/>
 <text x="532" y="95" class="combo tap">
 <tspan x="532" dy="-0.6em">&amp;mkp</tspan><tspan x="532" dy="1.2em">MB4</tspan>
 </text>
 </g>
-<g class="combo combopos-4">
+<g class="combo combopos-3">
 <rect rx="6" ry="6" x="518" y="138" width="28" height="26" class="combo"/>
 <text x="532" y="151" class="combo tap">
 <tspan x="532" dy="-0.6em">Sft+Ctl</tspan><tspan x="532" dy="1.2em">+1</tspan>
 </text>
 </g>
-<g class="combo combopos-5">
+<g class="combo combopos-4">
 <path d="M271,234 l-44,-6" class="combo"/>
 <path d="M271,234 l44,9" class="combo"/>
 <rect rx="6" ry="6" x="257" y="221" width="28" height="26" class="combo"/>
@@ -3397,6 +3393,10 @@ path.combo { stroke: #7f7f7f; }
 <a href="#bluetooth">
 <text x="271" y="245" class="combo hold layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
 </a></g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="574" y="75" width="28" height="26" class="combo"/>
+<text x="588" y="88" class="combo tap">ESCAPE</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 5083)" class="layer-15">
@@ -3583,22 +3583,18 @@ path.combo { stroke: #7f7f7f; }
 <text x="168" y="88" class="combo tap">Sft+TAB</text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="518" y="26" width="28" height="26" class="combo"/>
-<text x="532" y="39" class="combo tap">Ctl+W</text>
-</g>
-<g class="combo combopos-3">
 <rect rx="6" ry="6" x="518" y="82" width="28" height="26" class="combo"/>
 <text x="532" y="95" class="combo tap">
 <tspan x="532" dy="-0.6em">&amp;mkp</tspan><tspan x="532" dy="1.2em">MB4</tspan>
 </text>
 </g>
-<g class="combo combopos-4">
+<g class="combo combopos-3">
 <rect rx="6" ry="6" x="518" y="138" width="28" height="26" class="combo"/>
 <text x="532" y="151" class="combo tap">
 <tspan x="532" dy="-0.6em">Sft+Ctl</tspan><tspan x="532" dy="1.2em">+1</tspan>
 </text>
 </g>
-<g class="combo combopos-5">
+<g class="combo combopos-4">
 <path d="M271,234 l-44,-6" class="combo"/>
 <path d="M271,234 l44,9" class="combo"/>
 <rect rx="6" ry="6" x="257" y="221" width="28" height="26" class="combo"/>
@@ -3606,6 +3602,10 @@ path.combo { stroke: #7f7f7f; }
 <a href="#bluetooth">
 <text x="271" y="245" class="combo hold layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
 </a></g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="574" y="75" width="28" height="26" class="combo"/>
+<text x="588" y="88" class="combo tap">ESCAPE</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 5422)" class="layer-16">
@@ -3792,22 +3792,18 @@ path.combo { stroke: #7f7f7f; }
 <text x="168" y="88" class="combo tap">Sft+TAB</text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="518" y="26" width="28" height="26" class="combo"/>
-<text x="532" y="39" class="combo tap">Ctl+W</text>
-</g>
-<g class="combo combopos-3">
 <rect rx="6" ry="6" x="518" y="82" width="28" height="26" class="combo"/>
 <text x="532" y="95" class="combo tap">
 <tspan x="532" dy="-0.6em">&amp;mkp</tspan><tspan x="532" dy="1.2em">MB4</tspan>
 </text>
 </g>
-<g class="combo combopos-4">
+<g class="combo combopos-3">
 <rect rx="6" ry="6" x="518" y="138" width="28" height="26" class="combo"/>
 <text x="532" y="151" class="combo tap">
 <tspan x="532" dy="-0.6em">Sft+Ctl</tspan><tspan x="532" dy="1.2em">+1</tspan>
 </text>
 </g>
-<g class="combo combopos-5">
+<g class="combo combopos-4">
 <path d="M271,234 l-44,-6" class="combo"/>
 <path d="M271,234 l44,9" class="combo"/>
 <rect rx="6" ry="6" x="257" y="221" width="28" height="26" class="combo"/>
@@ -3815,6 +3811,10 @@ path.combo { stroke: #7f7f7f; }
 <a href="#bluetooth">
 <text x="271" y="245" class="combo hold layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
 </a></g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="574" y="75" width="28" height="26" class="combo"/>
+<text x="588" y="88" class="combo tap">ESCAPE</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 5760)" class="layer-17">
@@ -4001,22 +4001,18 @@ path.combo { stroke: #7f7f7f; }
 <text x="168" y="88" class="combo tap">Sft+TAB</text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="518" y="26" width="28" height="26" class="combo"/>
-<text x="532" y="39" class="combo tap">Ctl+W</text>
-</g>
-<g class="combo combopos-3">
 <rect rx="6" ry="6" x="518" y="82" width="28" height="26" class="combo"/>
 <text x="532" y="95" class="combo tap">
 <tspan x="532" dy="-0.6em">&amp;mkp</tspan><tspan x="532" dy="1.2em">MB4</tspan>
 </text>
 </g>
-<g class="combo combopos-4">
+<g class="combo combopos-3">
 <rect rx="6" ry="6" x="518" y="138" width="28" height="26" class="combo"/>
 <text x="532" y="151" class="combo tap">
 <tspan x="532" dy="-0.6em">Sft+Ctl</tspan><tspan x="532" dy="1.2em">+1</tspan>
 </text>
 </g>
-<g class="combo combopos-5">
+<g class="combo combopos-4">
 <path d="M271,234 l-44,-6" class="combo"/>
 <path d="M271,234 l44,9" class="combo"/>
 <rect rx="6" ry="6" x="257" y="221" width="28" height="26" class="combo"/>
@@ -4024,6 +4020,10 @@ path.combo { stroke: #7f7f7f; }
 <a href="#bluetooth">
 <text x="271" y="245" class="combo hold layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
 </a></g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="574" y="75" width="28" height="26" class="combo"/>
+<text x="588" y="88" class="combo tap">ESCAPE</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 6099)" class="layer-18">
@@ -4210,22 +4210,18 @@ path.combo { stroke: #7f7f7f; }
 <text x="168" y="88" class="combo tap">Sft+TAB</text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="518" y="26" width="28" height="26" class="combo"/>
-<text x="532" y="39" class="combo tap">Ctl+W</text>
-</g>
-<g class="combo combopos-3">
 <rect rx="6" ry="6" x="518" y="82" width="28" height="26" class="combo"/>
 <text x="532" y="95" class="combo tap">
 <tspan x="532" dy="-0.6em">&amp;mkp</tspan><tspan x="532" dy="1.2em">MB4</tspan>
 </text>
 </g>
-<g class="combo combopos-4">
+<g class="combo combopos-3">
 <rect rx="6" ry="6" x="518" y="138" width="28" height="26" class="combo"/>
 <text x="532" y="151" class="combo tap">
 <tspan x="532" dy="-0.6em">Sft+Ctl</tspan><tspan x="532" dy="1.2em">+1</tspan>
 </text>
 </g>
-<g class="combo combopos-5">
+<g class="combo combopos-4">
 <path d="M271,234 l-44,-6" class="combo"/>
 <path d="M271,234 l44,9" class="combo"/>
 <rect rx="6" ry="6" x="257" y="221" width="28" height="26" class="combo"/>
@@ -4233,6 +4229,10 @@ path.combo { stroke: #7f7f7f; }
 <a href="#bluetooth">
 <text x="271" y="245" class="combo hold layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
 </a></g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="574" y="75" width="28" height="26" class="combo"/>
+<text x="588" y="88" class="combo tap">ESCAPE</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 6438)" class="layer-19">
@@ -4419,22 +4419,18 @@ path.combo { stroke: #7f7f7f; }
 <text x="168" y="88" class="combo tap">Sft+TAB</text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="518" y="26" width="28" height="26" class="combo"/>
-<text x="532" y="39" class="combo tap">Ctl+W</text>
-</g>
-<g class="combo combopos-3">
 <rect rx="6" ry="6" x="518" y="82" width="28" height="26" class="combo"/>
 <text x="532" y="95" class="combo tap">
 <tspan x="532" dy="-0.6em">&amp;mkp</tspan><tspan x="532" dy="1.2em">MB4</tspan>
 </text>
 </g>
-<g class="combo combopos-4">
+<g class="combo combopos-3">
 <rect rx="6" ry="6" x="518" y="138" width="28" height="26" class="combo"/>
 <text x="532" y="151" class="combo tap">
 <tspan x="532" dy="-0.6em">Sft+Ctl</tspan><tspan x="532" dy="1.2em">+1</tspan>
 </text>
 </g>
-<g class="combo combopos-5">
+<g class="combo combopos-4">
 <path d="M271,234 l-44,-6" class="combo"/>
 <path d="M271,234 l44,9" class="combo"/>
 <rect rx="6" ry="6" x="257" y="221" width="28" height="26" class="combo"/>
@@ -4442,6 +4438,10 @@ path.combo { stroke: #7f7f7f; }
 <a href="#bluetooth">
 <text x="271" y="245" class="combo hold layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
 </a></g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="574" y="75" width="28" height="26" class="combo"/>
+<text x="588" y="88" class="combo tap">ESCAPE</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 6777)" class="layer-20">
@@ -4628,22 +4628,18 @@ path.combo { stroke: #7f7f7f; }
 <text x="168" y="88" class="combo tap">Sft+TAB</text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="518" y="26" width="28" height="26" class="combo"/>
-<text x="532" y="39" class="combo tap">Ctl+W</text>
-</g>
-<g class="combo combopos-3">
 <rect rx="6" ry="6" x="518" y="82" width="28" height="26" class="combo"/>
 <text x="532" y="95" class="combo tap">
 <tspan x="532" dy="-0.6em">&amp;mkp</tspan><tspan x="532" dy="1.2em">MB4</tspan>
 </text>
 </g>
-<g class="combo combopos-4">
+<g class="combo combopos-3">
 <rect rx="6" ry="6" x="518" y="138" width="28" height="26" class="combo"/>
 <text x="532" y="151" class="combo tap">
 <tspan x="532" dy="-0.6em">Sft+Ctl</tspan><tspan x="532" dy="1.2em">+1</tspan>
 </text>
 </g>
-<g class="combo combopos-5">
+<g class="combo combopos-4">
 <path d="M271,234 l-44,-6" class="combo"/>
 <path d="M271,234 l44,9" class="combo"/>
 <rect rx="6" ry="6" x="257" y="221" width="28" height="26" class="combo"/>
@@ -4651,6 +4647,10 @@ path.combo { stroke: #7f7f7f; }
 <a href="#bluetooth">
 <text x="271" y="245" class="combo hold layer-activator"><tspan style="font-size: 78%">bluetooth</tspan></text>
 </a></g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="574" y="75" width="28" height="26" class="combo"/>
+<text x="588" y="88" class="combo tap">ESCAPE</text>
+</g>
 </g>
 </g>
 </svg>
