@@ -99,11 +99,13 @@ bluetoothレイヤー → 右手中段
 
 ## コンボ一覧
 
-| コンボ名 | キー位置 | 動作 |
-|---|---|---|
-| tab | 11+12 | TAB |
-| shift_tab | 12+13 | Shift+TAB |
-| Ctrl_w | 5+6 | Ctrl+W |
-| Alt_Left | 17+18 | マウスボタン4（戻る） |
-| Ctrl_Shift_1 | 29+30 | Ctrl+Shift+1 |
-| Bluetooth | 37+38+39 | bluetoothレイヤー（ホールド） |
+| コンボ名 | キー位置 | 物理キー | 動作 |
+|---|---|---|---|
+| tab | 11+12 | S+D | TAB |
+| shift_tab | 12+13 | D+F | Shift+TAB |
+| escape | 18+19 | J+K | ESC |
+| Alt_Left | 17+18 | H+J | マウスボタン4（戻る） |
+| Ctrl_Shift_1 | 29+30 | N+M | Ctrl+Shift+1 |
+| Bluetooth | 37+38+39 | 無変換+スペース+TAB | bluetoothレイヤー（ホールド） |
+
+> **Ctrl_w コンボは 2026/06/04 に削除**（コミット 3b659e3）。誤発動リスクのため廃止。
