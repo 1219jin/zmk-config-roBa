@@ -1,5 +1,10 @@
 # 作業完了後のナレッジ更新チェックリスト
 
+> **2026/06/06 ナレッジ移行：** ナレッジ（01〜06）は GitHub `docs/` に移行済み。**GitHubが正（source of truth）**。
+> 以下の各ファイル名（`04_improvements.md` 等）はすべて GitHub `docs/` 配下のファイルを指す。
+> 更新は GitHub 側（`docs/`）で行い、Project内コピーは参照用とする。
+> raw 参照例：`https://raw.githubusercontent.com/1219jin/zmk-config-roBa/main/docs/04_improvements.md`
+
 一通りの作業が完了したら、以下を順番に確認・実施すること。
 
 ---
@@ -12,16 +17,16 @@
 - コミット履歴：https://github.com/1219jin/zmk-config-roBa/commits/main/config/roBa.keymap
 
 ### □ 2. 改善リストの項目を実装したか？
-→ YES の場合：`04_improvements.md` を更新
+→ YES の場合：GitHub `docs/04_improvements.md` を更新
 - 実装した項目を「未実装」から「実装済み ✅」セクションに移動
 - 日付・コミットIDを記載
 
 ### □ 3. レイヤー構成やコンボに変更があったか？
-→ YES の場合：`02_layers.md` を更新
+→ YES の場合：GitHub `docs/02_layers.md` を更新
 - レイヤー一覧・移動トリガー・差分表を修正
 
 ### □ 4. 新しいバックアップブランチを作成したか？
-→ YES の場合：`05_procedures.md` のバックアップブランチ一覧に追記
+→ YES の場合：GitHub `docs/05_procedures.md` のバックアップブランチ一覧に追記
 
 ---
 
@@ -48,5 +53,9 @@
 | 05_procedures.md | 手順・リファレンス | バックアップブランチ追加時 |
 | 06_post_work_checklist.md | このファイル | 基本変更不要 |
 
-> **原則：GitHubに存在する情報（keymap全文・コミット履歴）はナレッジに複製しない。**
-> ナレッジに残すのは「GitHubにない知識」（設計意図・改善アイデア・環境情報）のみ。
+> **原則：ナレッジ（01〜06）は GitHub `docs/` が唯一の正（source of truth）。**
+> 更新は必ず GitHub `docs/` 側で行い、Project内のコピーは参照専用とする（keymapと同じ扱い）。
+> keymap全文・コミット履歴は GitHub の `config/` 等にあるためナレッジに複製しない。
+>
+> 各ファイルは raw URL で参照可能（ChatGPT/Gemini からの参照にも使える）：
+> `https://raw.githubusercontent.com/1219jin/zmk-config-roBa/main/docs/<ファイル名>`
