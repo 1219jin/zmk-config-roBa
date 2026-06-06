@@ -937,3 +937,9 @@ combos:
   k: {t: SPACE, h: bluetooth}
 - p: [18, 19]
   k: ESCAPE
+- p: [1, 8]
+  k: Ctl+W
+  l: [default_win, arrow_win]
+- p: [1, 8]
+  k: Gui+W
+  l: [default_mac, arrow_mac]
