@@ -54,6 +54,22 @@
             bindings = <&kp ESCAPE>;
             key-positions = <18 19>;
         };
+
+        close_win {
+            bindings = <&kp LC(W)>;
+            key-positions = <1 8>;
+            layers = <0 1>;
+            timeout-ms = <35>;
+            require-prior-idle-ms = <150>;
+        };
+
+        close_mac {
+            bindings = <&kp LG(W)>;
+            key-positions = <1 8>;
+            layers = <2 3>;
+            timeout-ms = <35>;
+            require-prior-idle-ms = <150>;
+        };
     };
 
     macros {

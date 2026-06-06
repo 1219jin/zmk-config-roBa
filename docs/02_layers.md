@@ -99,13 +99,16 @@ bluetoothレイヤー → 右手中段
 
 ## コンボ一覧
 
-| コンボ名 | キー位置 | 物理キー | 動作 |
-|---|---|---|---|
-| tab | 11+12 | S+D | TAB |
-| shift_tab | 12+13 | D+F | Shift+TAB |
-| escape | 18+19 | J+K | ESC |
-| Alt_Left | 17+18 | H+J | マウスボタン4（戻る） |
-| Ctrl_Shift_1 | 29+30 | N+M | Ctrl+Shift+1 |
-| Bluetooth | 37+38+39 | 無変換+スペース+TAB | bluetoothレイヤー（ホールド） |
+| コンボ名 | キー位置 | 物理キー | 動作 | 有効レイヤー | timeout | idle |
+|---|---|---|---|---|---|---|
+| tab | 11+12 | S+D | TAB | 全 | — | — |
+| shift_tab | 12+13 | D+F | Shift+TAB | 全 | — | — |
+| escape | 18+19 | J+K | ESC | 全 | — | — |
+| Alt_Left | 17+18 | H+J | マウスボタン4（戻る） | 全 | — | — |
+| Ctrl_Shift_1 | 29+30 | N+M | Ctrl+Shift+1 | 全 | — | — |
+| Bluetooth | 37+38+39 | 無変換+スペース+TAB | bluetoothレイヤー（ホールド） | 全 | — | — |
+| close_win | 1+8 | W+O | Ctrl+W（タブ/ウィンドウを閉じる） | 0,1（Win） | 35ms | 150ms |
+| close_mac | 1+8 | W+O | Cmd+W（タブ/ウィンドウを閉じる） | 2,3（Mac） | 35ms | 150ms |
 
-> **Ctrl_w コンボは 2026/06/04 に削除**（コミット 3b659e3）。誤発動リスクのため廃止。
+> **close_win / close_mac**：同じ物理キー(W+O)を使い、レイヤーで Win/Mac を切り替える。
+> 左右の上段薬指を非隣接同時押し（間に6キーあり）で誤爆耐性を最大化。

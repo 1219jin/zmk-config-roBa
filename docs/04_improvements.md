@@ -24,7 +24,8 @@
 | 2026/06/04 | AML誤起動対策：CONFIG_PMW3610_MOVEMENT_THRESHOLD 0→5（roBa_R.conf） | 5ec03f1 |
 | 2026/06/04 | arrow_macにMac用タブ/ブラウザ操作を反映（前/次タブ=Ctrl系、戻る/進む=Cmd+[ / Cmd+]、新規タブ=Cmd+T、PageUp/Down）（⑬実装） | 35df8ff |
 | 2026/06/04 | ESCコンボ追加（J+K同時押し、key-positions: 18 19）（⑨実装） | 3b659e3 |
-| 2026/06/04 | Ctrl_wコンボ削除（Y+U同時押し、key-positions: 5 6）→誤発動リスク解消のため廃止（⑯対応） | 3b659e3 |
+| 2026/06/04 | Ctrl_wコンボ削除（Y+U同時押し、key-positions: 5 6）→誤発動リスク解消のため廃止（⑯第1段） | 3b659e3 |
+| 2026/06/06 | Ctrl+W(Win)/Cmd+W(Mac)コンボをW+O(1+8)に再設計・復元。左右上段薬指の非隣接同時押し、layers=<0 1>/<2 3>で記号/数字レイヤー不活性化（⑯完了） | PLACEHOLDER |
 
 ---
 
