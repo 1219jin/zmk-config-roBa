@@ -59,4 +59,3 @@
 >
 > 各ファイルは raw URL で参照可能（ChatGPT/Gemini からの参照にも使える）：
 > `https://raw.githubusercontent.com/1219jin/zmk-config-roBa/main/docs/<ファイル名>`
-<!-- claude-code push test 2026-06-06 -->
