@@ -42,6 +42,25 @@
 
 ---
 
+## ナレッジ更新フロー（★Claude Code 経由が本命）
+
+ローカルclone（`~/Documents/roBa/zmk-config-roBa`）を Claude Code で編集 → commit → push する。
+
+1. 設計・文章づくりが要るときは claude.ai で相談 → 固めた指示を Claude Code に渡す
+2. 軽い更新は Claude Code に直接依頼してよい
+3. Claude Code がローカルの `docs/` を編集 → commit → `push origin main`（ターミナルで Yes を押すだけ）
+4. push 後、Gemini Gem 等が raw URL 経由で次回から最新を参照
+
+- 環境：origin=`1219jin/zmk-config-roBa`、gh CLI（HTTPS）認証、SSH鍵は未使用
+- コミット規則：英語タイトル + 日本語説明（feat/fix/chore/docs/refactor 等）
+
+### 予備手段
+- claude.ai が更新版全文を出力 → GitHubの `upload/main/docs` に同名アップロード（上書き）
+- Claude in Chrome の base64注入アップロード（詳細は 05_procedures.md）
+- 軽微な1〜数行は GitHub Web の Edit で直接修正
+
+---
+
 ## ナレッジファイル一覧と役割
 
 | ファイル名 | 役割 | 更新タイミング |
@@ -54,8 +73,6 @@
 | 06_post_work_checklist.md | このファイル | 基本変更不要 |
 
 > **原則：ナレッジ（01〜06）は GitHub `docs/` が唯一の正（source of truth）。**
-> 更新は必ず GitHub `docs/` 側で行い、Project内のコピーは参照専用とする（keymapと同じ扱い）。
-> keymap全文・コミット履歴は GitHub の `config/` 等にあるためナレッジに複製しない。
->
-> 各ファイルは raw URL で参照可能（ChatGPT/Gemini からの参照にも使える）：
+> 更新は GitHub `docs/`（＝ローカルclone）側で行い、Project内コピーは参照専用とする。
+> 各ファイルは raw URL で参照可能（Gemini Gem 等が参照）：
 > `https://raw.githubusercontent.com/1219jin/zmk-config-roBa/main/docs/<ファイル名>`
