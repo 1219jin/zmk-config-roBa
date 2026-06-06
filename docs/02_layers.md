@@ -107,8 +107,9 @@ bluetoothレイヤー → 右手中段
 | Alt_Left | 17+18 | H+J | マウスボタン4（戻る） | 全 | — | — |
 | Ctrl_Shift_1 | 29+30 | N+M | Ctrl+Shift+1 | 全 | — | — |
 | Bluetooth | 37+38+39 | 無変換+スペース+TAB | bluetoothレイヤー（ホールド） | 全 | — | — |
-| close_win | 1+8 | W+O | Ctrl+W（タブ/ウィンドウを閉じる） | 0,1（Win） | 35ms | 150ms |
-| close_mac | 1+8 | W+O | Cmd+W（タブ/ウィンドウを閉じる） | 2,3（Mac） | 35ms | 150ms |
+| close_win | 30+32 | M+. | Ctrl+W（タブ/ウィンドウを閉じる） | 0,1（Win） | 35ms | 150ms |
+| close_mac | 30+32 | M+. | Cmd+W（タブ/ウィンドウを閉じる） | 2,3（Mac） | 35ms | 150ms |
 
-> **close_win / close_mac**：同じ物理キー(W+O)を使い、レイヤーで Win/Mac を切り替える。
-> 左右の上段薬指を非隣接同時押し（間に6キーあり）で誤爆耐性を最大化。
+> **close_win / close_mac**：同じ物理キー(M+.)を使い、レイヤーで Win/Mac を切り替える。
+> 右手下段・中指＋薬指（1キースキップ）。mouseレイヤーのMB1(J)/MB2(L)/MB3(I)と位置が完全に無関係。
+> 右手だけで完結するため、マウス操作中でも左手不要で押せる。
