@@ -370,10 +370,10 @@ path.combo { stroke: #7f7f7f; }
 <text x="588" y="88" class="combo tap">ESCAPE</text>
 </g>
 <g class="combo combopos-6">
-<path d="M378,42 l-276,0" class="combo"/>
-<path d="M378,42 l276,0" class="combo"/>
-<rect rx="6" ry="6" x="364" y="29" width="28" height="26" class="combo"/>
-<text x="378" y="42" class="combo tap">Ctl+W</text>
+<path d="M617,151 l-38,-2" class="combo"/>
+<path d="M617,151 l38,2" class="combo"/>
+<rect rx="6" ry="6" x="603" y="138" width="28" height="26" class="combo"/>
+<text x="617" y="151" class="combo tap">Ctl+W</text>
 </g>
 </g>
 </g>
@@ -610,10 +610,10 @@ path.combo { stroke: #7f7f7f; }
 <text x="588" y="88" class="combo tap">ESCAPE</text>
 </g>
 <g class="combo combopos-6">
-<path d="M378,42 l-276,0" class="combo"/>
-<path d="M378,42 l276,0" class="combo"/>
-<rect rx="6" ry="6" x="364" y="29" width="28" height="26" class="combo"/>
-<text x="378" y="42" class="combo tap">Ctl+W</text>
+<path d="M617,151 l-38,-2" class="combo"/>
+<path d="M617,151 l38,2" class="combo"/>
+<rect rx="6" ry="6" x="603" y="138" width="28" height="26" class="combo"/>
+<text x="617" y="151" class="combo tap">Ctl+W</text>
 </g>
 </g>
 </g>
@@ -839,10 +839,10 @@ path.combo { stroke: #7f7f7f; }
 <text x="588" y="88" class="combo tap">ESCAPE</text>
 </g>
 <g class="combo combopos-6">
-<path d="M378,42 l-276,0" class="combo"/>
-<path d="M378,42 l276,0" class="combo"/>
-<rect rx="6" ry="6" x="364" y="29" width="28" height="26" class="combo"/>
-<text x="378" y="42" class="combo tap">Gui+W</text>
+<path d="M617,151 l-38,-2" class="combo"/>
+<path d="M617,151 l38,2" class="combo"/>
+<rect rx="6" ry="6" x="603" y="138" width="28" height="26" class="combo"/>
+<text x="617" y="151" class="combo tap">Gui+W</text>
 </g>
 </g>
 </g>
@@ -1075,10 +1075,10 @@ path.combo { stroke: #7f7f7f; }
 <text x="588" y="88" class="combo tap">ESCAPE</text>
 </g>
 <g class="combo combopos-6">
-<path d="M378,42 l-276,0" class="combo"/>
-<path d="M378,42 l276,0" class="combo"/>
-<rect rx="6" ry="6" x="364" y="29" width="28" height="26" class="combo"/>
-<text x="378" y="42" class="combo tap">Gui+W</text>
+<path d="M617,151 l-38,-2" class="combo"/>
+<path d="M617,151 l38,2" class="combo"/>
+<rect rx="6" ry="6" x="603" y="138" width="28" height="26" class="combo"/>
+<text x="617" y="151" class="combo tap">Gui+W</text>
 </g>
 </g>
 </g>
