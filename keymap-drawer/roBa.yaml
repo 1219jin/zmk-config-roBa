@@ -38,8 +38,8 @@ layers:
   - LCTRL
   - LEFT WIN
   - LEFT ALT
-  - {t: INT MUHENKAN, h: num_sym}
-  - {t: SPACE, h: window_win}
+  - {t: INT MUHENKAN, h: window_win}
+  - {t: SPACE, h: num_sym}
   - {t: TAB, h: nav}
   - ENTER
   - {t: INT HENKAN, h: window_win}
@@ -82,8 +82,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -126,8 +126,8 @@ layers:
   - LEFT GUI
   - LEFT ALT
   - LEFT CONTROL
-  - {t: LANG2, h: num_sym}
-  - {t: SPACE, h: window_mac}
+  - {t: LANG2, h: window_mac}
+  - {t: SPACE, h: num_sym}
   - {t: TAB, h: nav}
   - {t: ▽, type: trans}
   - {t: LANG1, h: window_mac}
@@ -170,8 +170,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
