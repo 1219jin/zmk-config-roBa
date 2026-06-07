@@ -182,7 +182,7 @@
 &kp Q                             &kp W         &kp E         &kp R               &kp T                                          &kp Y             &kp U  &kp I      &kp O    &kp P
 &kp A                             &kp S         &kp D         &kp F               &kp G        &kp LS(LG(S))      &kp MINUS      &kp H             &kp J  &lt 5 K    &kp L    &kp SEMICOLON
 &mt_exit_AML_on_tap LEFT_SHIFT Z  &kp X         &kp C         &kp V               &kp B        &kp CAPSLOCK       &kp BACKSPACE  &kp N             &kp M  &kp COMMA  &kp DOT  &lt 7 SLASH
-&kp LCTRL                         &kp LEFT_WIN  &kp LEFT_ALT  &lt 7 INT_MUHENKAN  &lt 1 SPACE  &lt 8 TAB          &kp ENTER      &lt 1 INT_HENKAN                             &kp RCTRL
+&kp LCTRL                         &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 INT_MUHENKAN  &lt 7 SPACE  &lt 8 TAB          &kp ENTER      &lt 1 INT_HENKAN                             &kp RCTRL
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -208,7 +208,7 @@
 &trans        &trans        &trans            &trans       &trans                                             &trans       &trans  &trans  &trans  &trans
 &trans        &trans        &trans            &trans       &trans       &kp LG(LC(LS(NUMBER_4)))      &trans  &trans       &trans  &trans  &trans  &trans
 &trans        &trans        &trans            &trans       &trans       &kp CAPSLOCK                  &trans  &trans       &trans  &trans  &trans  &lt 7 SLASH
-&kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &lt 7 LANG2  &lt 3 SPACE  &lt 8 TAB                     &trans  &lt 3 LANG1                          &trans
+&kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &lt 3 LANG2  &lt 7 SPACE  &lt 8 TAB                     &trans  &lt 3 LANG1                          &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
