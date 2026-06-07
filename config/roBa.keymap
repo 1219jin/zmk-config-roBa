@@ -55,6 +55,14 @@
             key-positions = <18 19>;
         };
 
+        amp {
+            bindings = <&kp LS(NUMBER_6)>;
+            key-positions = <2 3>;
+            layers = <7>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <150>;
+        };
+
         close_win {
             bindings = <&kp LC(W)>;
             key-positions = <30 32>;
@@ -210,7 +218,7 @@
             bindings = <
 &kp LC(UP)     &kp LS(LC(TAB))       &kp LC(LA(UP))    &kp LC(TAB)            &kp LC(LG(SPACE))                             &trans  &trans                &kp LG(T)      &trans                    &trans
 &kp LC(LEFT)   &kp LC(LA(LEFT))      &kp LC(LA(DOWN))  &kp LC(LA(RIGHT))      &kp LC(RIGHT)      &trans      &trans          &trans  &kp LG(LEFT_BRACKET)  &trans         &kp LG(RIGHT_BRACKET)     &trans
-&kp LEFT_SHIFT &trans                &trans            &kp LG(R)              &trans             &trans      &trans          &trans  &trans                &trans         &trans                    &trans
+&kp LEFT_SHIFT  &trans  &trans  &kp LG(R)  &trans      &trans  &trans      &kp LC(LA(NUMBER_1))  &kp LC(LA(NUMBER_2))  &kp LC(LA(NUMBER_3))  &kp LC(LA(NUMBER_4))  &kp LC(LA(NUMBER_5))
 &trans         &trans                &trans            &trans                 &trans             &trans      &trans          &trans                                                                 &trans
             >;
 
@@ -248,12 +256,12 @@
         };
 
         num_sym {
-            // Left=symbols, Right=numpad/calc. Triggered by Space/変換/無変換 hold.
+            // Left=symbols (上段 JIS Shift順), Right=numpad/calc. =はLS(MINUS), *=H, =はHの左の内側キー.
             bindings = <
-&trans                &kp EXCLAMATION   &kp LS(NUMBER_2)  &kp HASH          &trans                       &kp SLASH        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS
-&kp LS(EQUAL)         &kp DLLR          &kp PERCENT       &kp LS(NUMBER_6)  &trans  &trans      &trans   &kp LS(EQUAL)    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LS(SEMICOLON)
-&kp LS(LEFT_BRACKET)  &kp LS(NUMBER_7)  &kp LS(RIGHT_BRACKET)  &kp LS(NUMBER_9)  &trans  &trans      &kp DEL  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD
-&trans                &trans            &trans            &trans            &trans  &trans      &trans   &trans                                                                   &trans
+&kp LS(NUMBER_1)   &kp LS(NUMBER_2)  &kp LS(NUMBER_3)       &kp LS(NUMBER_4)   &kp LS(NUMBER_5)                            &kp SLASH             &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS
+&kp LS(NUMBER_7)   &kp LS(NUMBER_8)  &kp LS(NUMBER_9)       &kp LS(INT_RO)     &kp LEFT_BRACKET  &trans  &kp LS(MINUS)     &kp LS(SINGLE_QUOTE)  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LS(SEMICOLON)
+&kp RIGHT_BRACKET  &kp BACKSLASH     &kp LS(RIGHT_BRACKET)  &kp LS(BACKSLASH)  &kp SINGLE_QUOTE  &trans  &kp DEL           &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD
+&trans             &trans            &trans                 &trans             &trans            &trans  &trans            &trans                                                                      &trans
             >;
         };
 
