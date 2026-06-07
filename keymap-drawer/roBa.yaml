@@ -162,11 +162,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
+  - Ctl+Alt+1
+  - Ctl+Alt+2
+  - Ctl+Alt+3
+  - Ctl+Alt+4
+  - {t: Ctl+Alt+5, type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -309,33 +309,33 @@ layers:
   - BT CLR ALL
   - {t: ▽, type: trans}
   num_sym:
-  - {t: ▽, type: trans}
-  - '!'
+  - Sft+1
   - Sft+2
-  - '#'
-  - {t: ▽, type: trans}
+  - Sft+3
+  - Sft+4
+  - Sft+5
   - /
   - KP 7
   - KP 8
   - KP 9
   - '-'
-  - Sft+=
-  - $
-  - '%'
-  - Sft+6
+  - Sft+7
+  - Sft+8
+  - Sft+9
+  - Sft+INT RO
+  - '['
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Sft+=
+  - Sft+-
+  - Sft+'
   - KP 4
   - KP 5
   - KP 6
   - Sft+;
-  - Sft+[
-  - Sft+7
+  - ']'
+  - \
   - Sft+]
-  - Sft+9
-  - {t: ▽, type: trans}
+  - Sft+\
+  - ''''
   - {t: ▽, type: trans}
   - DEL
   - KP 0
@@ -937,6 +937,9 @@ combos:
   k: {t: SPACE, h: bluetooth}
 - p: [18, 19]
   k: ESCAPE
+- p: [2, 3]
+  k: Sft+6
+  l: [num_sym]
 - p: [30, 32]
   k: Ctl+W
   l: [default_win, window_win]
