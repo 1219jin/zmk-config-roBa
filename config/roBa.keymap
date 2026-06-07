@@ -173,22 +173,23 @@
             bindings = <
 &kp Q                             &kp W         &kp E         &kp R               &kp T                                          &kp Y             &kp U  &kp I      &kp O    &kp P
 &kp A                             &kp S         &kp D         &kp F               &kp G        &kp LS(LG(S))      &kp MINUS      &kp H             &kp J  &lt 5 K    &kp L    &kp SEMICOLON
-&mt_exit_AML_on_tap LEFT_SHIFT Z  &kp X         &kp C         &kp V               &lt 6 B      &kp LEFT_ALT       &kp BACKSPACE  &kp N             &kp M  &kp COMMA  &kp DOT  &lt 7 SLASH
-&kp LCTRL                         &kp LEFT_WIN  &kp LEFT_ALT  &lt 8 INT_MUHENKAN  &lt 7 SPACE  &lt 1 TAB          &kp ENTER      &lt 8 INT_HENKAN                             &kp RCTRL
+&mt_exit_AML_on_tap LEFT_SHIFT Z  &kp X         &kp C         &kp V               &lt 6 B      &kp LEFT_ALT       &kp BACKSPACE  &kp N             &kp M  &kp COMMA  &kp DOT  &lt 1 SLASH
+&kp LCTRL                         &kp LEFT_WIN  &kp LEFT_ALT  &lt 7 INT_MUHENKAN  &lt 7 SPACE  &lt 8 TAB          &kp ENTER      &lt 7 INT_HENKAN                             &kp RCTRL
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
         };
 
-        arrow_win {
+        window_win {
+            // Win: window/tab/browser ops. Triggered by Slash hold (right hand).
             bindings = <
-&kp ESCAPE        &kp LS(LC(TAB))     &kp LG(UP_ARROW)    &kp LC(TAB)          &trans                                 &kp LA(LS(TAB))  &kp PAGE_UP  &kp UP    &kp PAGE_DOWN  &kp LA(TAB)
-&kp LG(LC(LEFT))  &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &kp LC(LG(RIGHT))  &trans      &trans  &kp HOME         &kp LEFT     &kp DOWN  &kp RIGHT      &kp END
-&kp LEFT_SHIFT    &kp LA(LEFT)        &kp LC(T)           &kp LA(RIGHT)        &trans             &trans      &trans  &trans           &trans       &trans    &trans         &trans
-&trans            &trans              &trans              &trans               &trans             &trans      &trans  &trans                                                 &trans
+&kp LG(TAB)       &kp LS(LC(TAB))     &kp LG(UP_ARROW)    &kp LC(TAB)          &kp LG(DOT)                                 &trans  &trans        &trans    &trans         &trans
+&kp LG(LC(LEFT))  &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &kp LC(LG(RIGHT))  &trans      &trans       &trans  &kp LA(LEFT)  &kp LC(T) &kp LA(RIGHT)  &trans
+&kp LEFT_SHIFT    &kp LA(F4)          &trans              &kp F5               &trans             &trans      &trans       &trans  &trans        &trans    &trans         &trans
+&trans            &trans              &trans              &trans               &trans             &trans      &trans       &trans                                          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         default_mac {
@@ -197,22 +198,23 @@
             bindings = <
 &trans        &trans        &trans            &trans       &trans                                        &trans       &trans  &trans  &trans  &trans
 &trans        &trans        &trans            &trans       &trans  &kp LG(LC(LS(NUMBER_4)))      &trans  &trans       &trans  &trans  &trans  &trans
-&trans        &trans        &trans            &trans       &trans  &trans                        &trans  &trans       &trans  &trans  &trans  &trans
-&kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &lt 8 LANG2  &trans  &lt 3 TAB                     &trans  &lt 8 LANG1                          &trans
+&trans        &trans        &trans            &trans       &trans  &trans                        &trans  &trans       &trans  &trans  &trans  &lt 3 SLASH
+&kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &lt 7 LANG2  &trans  &lt 8 TAB                     &trans  &lt 7 LANG1                          &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
         };
 
-        arrow_mac {
+        window_mac {
+            // Mac: window/tab/browser ops. Triggered by Slash hold (right hand).
             bindings = <
-&kp ESCAPE      &kp LS(LC(TAB))       &kp LC(LA(UP))    &kp LC(TAB)            &trans                             &kp LA(LS(TAB))  &kp PAGE_UP  &kp UP    &kp PAGE_DOWN  &kp LA(TAB)
-&kp LC(LEFT)    &kp LC(LA(LEFT))      &kp LC(LA(DOWN))  &kp LC(LA(RIGHT))      &kp LC(RIGHT)  &trans      &trans  &kp HOME         &kp LEFT     &kp DOWN  &kp RIGHT      &kp END
-&kp LEFT_SHIFT  &kp LG(LEFT_BRACKET)  &kp LG(T)         &kp LG(RIGHT_BRACKET)  &trans         &trans      &trans  &trans           &trans       &trans    &trans         &trans
-&trans          &trans                &trans            &trans                 &trans         &trans      &trans  &trans                                                 &trans
+&kp LC(UP)     &kp LS(LC(TAB))       &kp LC(LA(UP))    &kp LC(TAB)            &kp LC(LG(SPACE))                             &trans  &trans                &kp LG(T)      &trans                    &trans
+&kp LC(LEFT)   &kp LC(LA(LEFT))      &kp LC(LA(DOWN))  &kp LC(LA(RIGHT))      &kp LC(RIGHT)      &trans      &trans          &trans  &kp LG(LEFT_BRACKET)  &trans         &kp LG(RIGHT_BRACKET)     &trans
+&kp LEFT_SHIFT &trans                &trans            &kp LG(R)              &trans             &trans      &trans          &trans  &trans                &trans         &trans                    &trans
+&trans         &trans                &trans            &trans                 &trans             &trans      &trans          &trans                                                                 &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         mouse {
@@ -245,22 +247,26 @@
             >;
         };
 
-        symbol {
+        num_sym {
+            // Left=symbols, Right=numpad/calc. Triggered by Space/変換/無変換 hold.
             bindings = <
-&trans                &kp EXCLAMATION   &kp LS(NUMBER_2)  &kp HASH          &trans                       &kp LS(NUMBER_8)       &kp LS(NUMBER_9)   &kp MINUS      &kp EQUAL         &kp INT_YEN
-&kp LS(EQUAL)         &kp DLLR          &kp PERCENT       &kp LS(NUMBER_6)  &trans  &trans      &trans   &kp LS(RIGHT_BRACKET)  &kp LS(BACKSLASH)  &kp SEMICOLON  &kp SINGLE_QUOTE  &kp LEFT_BRACKET
-&kp LS(LEFT_BRACKET)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &trans  &trans      &kp DEL  &kp RIGHT_BRACKET      &kp BACKSLASH      &kp PERIOD     &kp LS(NUMBER_2)  &kp LS(INT_RO)
-&trans                &trans            &trans            &trans            &trans  &trans      &trans   &trans                                                                     &trans
+&trans                &kp EXCLAMATION   &kp LS(NUMBER_2)  &kp HASH          &trans                       &kp SLASH        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS
+&kp LS(EQUAL)         &kp DLLR          &kp PERCENT       &kp LS(NUMBER_6)  &trans  &trans      &trans   &kp LS(EQUAL)    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LS(SEMICOLON)
+&kp LS(LEFT_BRACKET)  &kp LS(NUMBER_7)  &kp LS(RIGHT_BRACKET)  &kp LS(NUMBER_9)  &trans  &trans      &kp DEL  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD
+&trans                &trans            &trans            &trans            &trans  &trans      &trans   &trans                                                                   &trans
             >;
         };
 
-        num {
+        nav {
+            // Nav: arrows/Home/End/PgUp/Dn (right) + F-keys (left). Triggered by TAB hold.
             bindings = <
-&kp LS(SINGLE_QUOTE)                        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS                                                   &kp F11  &kp F12  &trans  &trans   &trans
-&kp SLASH                                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LS(SEMICOLON)  &kp LC(LA(KP_NUMBER_0))      &kp F6      &kp F7   &kp F8   &kp F9  &kp F10  &trans
-&mt_exit_AML_on_tap LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD         &kp ENTER                    &kp DELETE  &kp F2   &kp F3   &kp F4  &kp F5   &kp ESCAPE
-&trans                                      &kp KP_NUMBER_0  &kp DOT          &trans           &trans             &trans                       &trans      &trans                             &trans
+&trans  &trans  &trans  &trans  &trans                      &trans    &kp PAGE_UP  &kp UP     &kp PAGE_DOWN  &trans
+&trans  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans    &kp HOME  &kp LEFT     &kp DOWN   &kp RIGHT      &kp END
+&trans  &kp F2  &trans  &kp F4  &trans  &trans   &trans    &trans    &trans       &trans     &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans   &trans    &trans                                           &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
 
         layer_9 {
