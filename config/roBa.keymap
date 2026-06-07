@@ -93,7 +93,7 @@
             wait-ms = <0>;
             tap-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&tog_off MOUSE>;
+            bindings = <&tog_off 4>;
             label = "exit_AML";
         };
 
@@ -181,8 +181,8 @@
             bindings = <
 &kp Q                             &kp W         &kp E         &kp R               &kp T                                          &kp Y             &kp U  &kp I      &kp O    &kp P
 &kp A                             &kp S         &kp D         &kp F               &kp G        &kp LS(LG(S))      &kp MINUS      &kp H             &kp J  &lt 5 K    &kp L    &kp SEMICOLON
-&mt_exit_AML_on_tap LEFT_SHIFT Z  &kp X         &kp C         &kp V               &lt 6 B      &kp LEFT_ALT       &kp BACKSPACE  &kp N             &kp M  &kp COMMA  &kp DOT  &lt 1 SLASH
-&kp LCTRL                         &kp LEFT_WIN  &kp LEFT_ALT  &lt 7 INT_MUHENKAN  &lt 7 SPACE  &lt 8 TAB          &kp ENTER      &lt 7 INT_HENKAN                             &kp RCTRL
+&mt_exit_AML_on_tap LEFT_SHIFT Z  &kp X         &kp C         &kp V               &kp B        &kp CAPSLOCK       &kp BACKSPACE  &kp N             &kp M  &kp COMMA  &kp DOT  &lt 7 SLASH
+&kp LCTRL                         &kp LEFT_WIN  &kp LEFT_ALT  &lt 7 INT_MUHENKAN  &lt 7 SPACE  &lt 8 TAB          &kp ENTER      &lt 1 INT_HENKAN                             &kp RCTRL
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -190,11 +190,12 @@
 
         window_win {
             // Win: window/tab/browser ops. Triggered by Slash hold (right hand).
+
             bindings = <
-&kp LG(TAB)       &kp LS(LC(TAB))     &kp LG(UP_ARROW)    &kp LC(TAB)          &kp LG(DOT)                                 &trans  &trans        &trans    &trans         &trans
-&kp LG(LC(LEFT))  &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &kp LC(LG(RIGHT))  &trans      &trans       &trans  &kp LA(LEFT)  &kp LC(T) &kp LA(RIGHT)  &trans
-&kp LEFT_SHIFT    &kp LA(F4)          &trans              &kp F5               &trans             &trans      &trans       &trans  &trans        &trans    &trans         &trans
-&trans            &trans              &trans              &trans               &trans             &trans      &trans       &trans                                          &trans
+&kp LG(TAB)       &kp LS(LC(TAB))     &kp LG(UP_ARROW)    &kp LC(TAB)          &kp LG(DOT)                            &trans  &trans        &trans     &trans         &trans
+&kp LG(LC(LEFT))  &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &kp LC(LG(RIGHT))  &trans      &trans  &trans  &kp LA(LEFT)  &kp LC(T)  &kp LA(RIGHT)  &trans
+&kp LEFT_SHIFT    &kp LA(F4)          &trans              &kp F5               &trans             &trans      &trans  &trans  &trans        &trans     &trans         &trans
+&trans            &trans              &trans              &trans               &trans             &trans      &trans  &trans                                          &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -206,8 +207,8 @@
             bindings = <
 &trans        &trans        &trans            &trans       &trans                                        &trans       &trans  &trans  &trans  &trans
 &trans        &trans        &trans            &trans       &trans  &kp LG(LC(LS(NUMBER_4)))      &trans  &trans       &trans  &trans  &trans  &trans
-&trans        &trans        &trans            &trans       &trans  &trans                        &trans  &trans       &trans  &trans  &trans  &lt 3 SLASH
-&kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &lt 7 LANG2  &trans  &lt 8 TAB                     &trans  &lt 7 LANG1                          &trans
+&trans        &trans        &trans            &trans       &trans  &kp CAPSLOCK                  &trans  &trans       &trans  &trans  &trans  &lt 7 SLASH
+&kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &lt 7 LANG2  &trans  &lt 8 TAB                     &trans  &lt 3 LANG1                          &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -215,11 +216,12 @@
 
         window_mac {
             // Mac: window/tab/browser ops. Triggered by Slash hold (right hand).
+
             bindings = <
-&kp LC(UP)     &kp LS(LC(TAB))       &kp LC(LA(UP))    &kp LC(TAB)            &kp LC(LG(SPACE))                             &trans  &trans                &kp LG(T)      &trans                    &trans
-&kp LC(LEFT)   &kp LC(LA(LEFT))      &kp LC(LA(DOWN))  &kp LC(LA(RIGHT))      &kp LC(RIGHT)      &trans      &trans          &trans  &kp LG(LEFT_BRACKET)  &trans         &kp LG(RIGHT_BRACKET)     &trans
-&kp LEFT_SHIFT  &trans  &trans  &kp LG(R)  &trans      &trans  &trans      &kp LC(LA(NUMBER_1))  &kp LC(LA(NUMBER_2))  &kp LC(LA(NUMBER_3))  &kp LC(LA(NUMBER_4))  &kp LC(LA(NUMBER_5))
-&trans         &trans                &trans            &trans                 &trans             &trans      &trans          &trans                                                                 &trans
+&kp LC(UP)      &kp LS(LC(TAB))   &kp LC(LA(UP))    &kp LC(TAB)        &kp LC(LG(SPACE))                      &trans                &trans                &kp LG(T)             &trans                 &trans
+&kp LC(LEFT)    &kp LC(LA(LEFT))  &kp LC(LA(DOWN))  &kp LC(LA(RIGHT))  &kp LC(RIGHT)      &trans      &trans  &trans                &kp LG(LEFT_BRACKET)  &trans                &kp LG(RIGHT_BRACKET)  &trans
+&kp LEFT_SHIFT  &trans            &trans            &kp LG(R)          &trans             &trans      &trans  &kp LC(LA(NUMBER_1))  &kp LC(LA(NUMBER_2))  &kp LC(LA(NUMBER_3))  &kp LC(LA(NUMBER_4))   &kp LC(LA(NUMBER_5))
+&trans          &trans            &trans            &trans             &trans             &trans      &trans  &trans                                                                                   &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -257,132 +259,26 @@
 
         num_sym {
             // Left=symbols (上段 JIS Shift順), Right=numpad/calc. =はLS(MINUS), *=H, =はHの左の内側キー.
+
             bindings = <
-&kp LS(NUMBER_1)   &kp LS(NUMBER_2)  &kp LS(NUMBER_3)       &kp LS(NUMBER_4)   &kp LS(NUMBER_5)                            &kp SLASH             &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS
-&kp LS(NUMBER_7)   &kp LS(NUMBER_8)  &kp LS(NUMBER_9)       &kp LS(INT_RO)     &kp LEFT_BRACKET  &trans  &kp LS(MINUS)     &kp LS(SINGLE_QUOTE)  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LS(SEMICOLON)
-&kp RIGHT_BRACKET  &kp BACKSLASH     &kp LS(RIGHT_BRACKET)  &kp LS(BACKSLASH)  &kp SINGLE_QUOTE  &trans  &kp DEL           &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD
-&trans             &trans            &trans                 &trans             &trans            &trans  &trans            &trans                                                                      &trans
+&kp LS(NUMBER_1)   &kp LS(NUMBER_2)  &kp LS(NUMBER_3)       &kp LS(NUMBER_4)   &kp LS(NUMBER_5)                             &kp SLASH             &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS
+&kp LS(NUMBER_7)   &kp LS(NUMBER_8)  &kp LS(NUMBER_9)       &kp LS(INT_RO)     &kp LEFT_BRACKET  &trans      &kp LS(MINUS)  &kp LS(SINGLE_QUOTE)  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LS(SEMICOLON)
+&kp RIGHT_BRACKET  &kp BACKSLASH     &kp LS(RIGHT_BRACKET)  &kp LS(BACKSLASH)  &kp SINGLE_QUOTE  &trans      &kp BACKSPACE  &kp KP_NUMBER_0       &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD
+&trans             &trans            &trans                 &trans             &trans            &trans      &trans         &trans                                                                   &trans
             >;
         };
 
         nav {
             // Nav: arrows/Home/End/PgUp/Dn (right) + F-keys (left). Triggered by TAB hold.
+
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans    &kp PAGE_UP  &kp UP     &kp PAGE_DOWN  &trans
-&trans  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans    &kp HOME  &kp LEFT     &kp DOWN   &kp RIGHT      &kp END
-&trans  &kp F2  &trans  &kp F4  &trans  &trans   &trans    &trans    &trans       &trans     &trans         &trans
-&trans  &trans  &trans  &trans  &trans  &trans   &trans    &trans                                           &trans
+&trans  &trans  &trans  &trans  &trans                       &trans    &kp PAGE_UP  &kp UP    &kp PAGE_DOWN  &trans
+&trans  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10      &trans  &kp HOME  &kp LEFT     &kp DOWN  &kp RIGHT      &kp END
+&trans  &kp F2  &trans  &kp F4  &trans  &trans       &trans  &trans    &trans       &trans    &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans                                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
-        };
-
-        layer_9 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
-            >;
-        };
-
-        layer_10 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
-            >;
-        };
-
-        layer_11 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
-            >;
-        };
-
-        layer_12 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
-            >;
-        };
-
-        layer_13 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
-            >;
-        };
-
-        layer_14 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
-            >;
-        };
-
-        layer_15 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
-            >;
-        };
-
-        layer_16 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
-            >;
-        };
-
-        layer_17 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
-            >;
-        };
-
-        layer_18 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
-            >;
-        };
-
-        layer_19 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
-            >;
-        };
-
-        layer_20 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
-            >;
         };
     };
 };
