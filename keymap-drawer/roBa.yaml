@@ -68,12 +68,12 @@ layers:
   - Alt+RIGHT
   - {t: ▽, type: trans}
   - LEFT SHIFT
-  - Alt+F4
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F5
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - DELETE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -161,7 +161,7 @@ layers:
   - Gui+R
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - DELETE
   - Ctl+Alt+1
   - Ctl+Alt+2
   - Ctl+Alt+3
@@ -249,7 +249,7 @@ layers:
   - '&globe_n'
   - GLOBE
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - DELETE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -319,12 +319,12 @@ layers:
   - UP
   - PAGE DOWN
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - F6
   - F7
   - F8
   - F9
   - F10
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - HOME
   - LEFT
@@ -459,7 +459,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: default_win, h: toggle}
-  - {t: default_mac, h: toggle}
+  - {t: default_ipad, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -491,6 +491,7 @@ combos:
   k: Sft+TAB
 - p: [17, 18]
   k: '&mkp MB4'
+  l: [default_win, window_win, default_mac, window_mac, default_ipad, window_ipad]
 - p: [29, 30]
   k: Sft+Ctl+1
 - p: [37, 38, 39]
@@ -506,3 +507,18 @@ combos:
 - p: [30, 32]
   k: Gui+W
   l: [default_mac, window_mac, default_ipad, window_ipad]
+- p: [23, 24, 25]
+  k: Alt+F4
+  l: [window_win]
+- p: [3, 4]
+  k: F7
+  l: [num_sym]
+- p: [13, 14]
+  k: F8
+  l: [num_sym]
+- p: [5, 6]
+  k: F9
+  l: [num_sym]
+- p: [17, 18]
+  k: F10
+  l: [num_sym]
