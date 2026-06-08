@@ -459,8 +459,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: default_win, h: toggle}
+  - {t: default_mac, h: toggle}
   - {t: default_ipad, h: toggle}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '1'
