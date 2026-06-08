@@ -38,6 +38,7 @@
         Alt_Left {
             bindings = <&mkp MB4>;
             key-positions = <17 18>;
+            layers = <0 1 2 3 4 5>;
         };
 
         Ctrl_Shift_1 {
@@ -76,6 +77,46 @@
             key-positions = <30 32>;
             layers = <2 3 4 5>;
             timeout-ms = <35>;
+            require-prior-idle-ms = <150>;
+        };
+
+        alt_f4 {
+            bindings = <&kp LA(F4)>;
+            key-positions = <23 24 25>;
+            layers = <1>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <150>;
+        };
+
+        f7 {
+            bindings = <&kp F7>;
+            key-positions = <3 4>;
+            layers = <6>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <150>;
+        };
+
+        f8 {
+            bindings = <&kp F8>;
+            key-positions = <13 14>;
+            layers = <6>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <150>;
+        };
+
+        f9 {
+            bindings = <&kp F9>;
+            key-positions = <5 6>;
+            layers = <6>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <150>;
+        };
+
+        f10 {
+            bindings = <&kp F10>;
+            key-positions = <17 18>;
+            layers = <6>;
+            timeout-ms = <40>;
             require-prior-idle-ms = <150>;
         };
     };
@@ -275,7 +316,7 @@
             bindings = <
 &kp LG(TAB)       &kp LS(LC(TAB))     &kp LG(UP_ARROW)    &kp LC(TAB)          &kp LG(DOT)                            &trans  &trans        &trans     &trans         &trans
 &kp LG(LC(LEFT))  &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &kp LC(LG(RIGHT))  &trans      &trans  &trans  &kp LA(LEFT)  &kp LC(T)  &kp LA(RIGHT)  &trans
-&kp LEFT_SHIFT    &kp LA(F4)          &trans              &kp F5               &trans             &trans      &trans  &trans  &trans        &trans     &trans         &trans
+&kp LEFT_SHIFT  &trans  &trans  &kp F5  &trans  &trans  &kp DELETE  &trans  &trans  &trans  &trans  &trans
 &trans            &trans              &trans              &trans               &trans             &trans      &trans  &trans                                          &trans
             >;
 
@@ -301,7 +342,7 @@
             bindings = <
 &kp LC(UP)      &kp LS(LC(TAB))   &kp LC(LA(UP))    &kp LC(TAB)        &kp LC(LG(SPACE))                      &trans                &trans                &kp LG(T)             &trans                 &trans
 &kp LC(LEFT)    &kp LC(LA(LEFT))  &kp LC(LA(DOWN))  &kp LC(LA(RIGHT))  &kp LC(RIGHT)      &trans      &trans  &trans                &kp LG(LEFT_BRACKET)  &trans                &kp LG(RIGHT_BRACKET)  &trans
-&kp LEFT_SHIFT  &trans            &trans            &kp LG(R)          &trans             &trans      &trans  &kp LC(LA(NUMBER_1))  &kp LC(LA(NUMBER_2))  &kp LC(LA(NUMBER_3))  &kp LC(LA(NUMBER_4))   &kp LC(LA(NUMBER_5))
+&kp LEFT_SHIFT  &trans  &trans  &kp LG(R)  &trans  &trans  &kp DELETE  &kp LC(LA(NUMBER_1))  &kp LC(LA(NUMBER_2))  &kp LC(LA(NUMBER_3))  &kp LC(LA(NUMBER_4))  &kp LC(LA(NUMBER_5))
 &trans          &trans            &trans            &trans             &trans             &trans      &trans  &trans                                                                                   &trans
             >;
 
@@ -323,7 +364,7 @@
             bindings = <
 &globe_up       &kp LS(LC(TAB))   &globe_f       &kp LC(TAB)         &kp LG(M)                                        &trans  &trans                 &kp LG(T)              &trans  &trans
 &globe_left     &globe_ctrl_left  &kp LG(H)      &globe_ctrl_right   &globe_right  &trans  &trans      &trans         &kp LG(LEFT_BRACKET)  &globe_down  &kp LG(RIGHT_BRACKET)  &trans
-&kp LEFT_SHIFT  &globe_a          &kp LG(SPACE)  &globe_n            &kp GLOBE     &trans  &trans      &trans         &trans                &trans       &trans                 &kp LG(R)
+&kp LEFT_SHIFT  &globe_a  &kp LG(SPACE)  &globe_n  &kp GLOBE  &trans  &kp DELETE  &trans  &trans  &trans  &trans  &kp LG(R)
 &trans          &trans            &trans         &trans              &trans        &trans  &trans      &trans                                                                       &trans
             >;
         };
@@ -344,7 +385,7 @@
 
             bindings = <
 &trans  &trans  &trans  &trans  &trans                       &trans    &kp PAGE_UP  &kp UP    &kp PAGE_DOWN  &trans
-&trans  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10      &trans  &kp HOME  &kp LEFT     &kp DOWN  &kp RIGHT      &kp END
+&kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans  &trans  &kp HOME  &kp LEFT  &kp DOWN  &kp RIGHT  &kp END
 &trans  &kp F2  &trans  &kp F4  &trans  &trans       &trans  &trans    &trans       &trans    &trans         &trans
 &trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans                                          &trans
             >;
@@ -376,7 +417,7 @@
 
             bindings = <
 &trans        &trans        &trans        &trans  &trans                           &sw_win         &sw_mac  &sw_ipad  &bt BT_SEL 3  &bt BT_SEL 4
-&trans        &trans        &trans        &trans  &trans  &trans           &trans  &to 0           &to 2    &trans    &trans        &trans
+&trans        &trans        &trans        &trans  &trans  &trans           &trans  &to 0           &to 4    &trans    &trans        &trans
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans  &bootloader      &trans  &trans          &trans   &trans    &trans        &bt BT_CLR
 &trans        &trans        &trans        &trans  &trans  &trans           &trans  &bt BT_CLR_ALL                                   &trans
             >;
