@@ -176,6 +176,182 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  default_ipad:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - CAPSLOCK
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: /, h: num_sym}
+  - LEFT GUI
+  - LEFT ALT
+  - LEFT CONTROL
+  - {t: LANG2, h: window_ipad}
+  - {t: SPACE, h: num_sym}
+  - {t: TAB, h: nav}
+  - {t: ▽, type: trans}
+  - {t: LANG1, h: window_ipad}
+  - {t: ▽, type: trans}
+  window_ipad:
+  - '&globe_up'
+  - Sft+Ctl+TAB
+  - '&globe_f'
+  - Ctl+TAB
+  - Gui+M
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Gui+T
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&globe_left'
+  - '&globe_ctrl_left'
+  - Gui+H
+  - '&globe_ctrl_right'
+  - '&globe_right'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Gui+[
+  - '&globe_down'
+  - Gui+]
+  - {t: ▽, type: trans}
+  - LEFT SHIFT
+  - '&globe_a'
+  - Gui+SPACE
+  - '&globe_n'
+  - GLOBE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Gui+R
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  num_sym:
+  - Sft+1
+  - Sft+2
+  - Sft+3
+  - Sft+4
+  - Sft+5
+  - /
+  - KP 7
+  - KP 8
+  - KP 9
+  - '-'
+  - Sft+7
+  - Sft+8
+  - Sft+9
+  - Sft+INT RO
+  - '['
+  - {t: ▽, type: trans}
+  - Sft+-
+  - Sft+'
+  - KP 4
+  - KP 5
+  - KP 6
+  - Sft+;
+  - ']'
+  - \
+  - Sft+]
+  - Sft+\
+  - ''''
+  - {t: ▽, type: trans}
+  - BACKSPACE
+  - KP 0
+  - KP 1
+  - KP 2
+  - KP 3
+  - {t: ., type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  nav:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - PAGE UP
+  - UP
+  - PAGE DOWN
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - {t: ▽, type: trans}
+  - HOME
+  - LEFT
+  - DOWN
+  - RIGHT
+  - END
+  - {t: ▽, type: trans}
+  - F2
+  - {t: ▽, type: trans}
+  - F4
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   mouse:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -308,94 +484,6 @@ layers:
   - {t: ▽, type: trans}
   - BT CLR ALL
   - {t: ▽, type: trans}
-  num_sym:
-  - Sft+1
-  - Sft+2
-  - Sft+3
-  - Sft+4
-  - Sft+5
-  - /
-  - KP 7
-  - KP 8
-  - KP 9
-  - '-'
-  - Sft+7
-  - Sft+8
-  - Sft+9
-  - Sft+INT RO
-  - '['
-  - {t: ▽, type: trans}
-  - Sft+-
-  - Sft+'
-  - KP 4
-  - KP 5
-  - KP 6
-  - Sft+;
-  - ']'
-  - \
-  - Sft+]
-  - Sft+\
-  - ''''
-  - {t: ▽, type: trans}
-  - BACKSPACE
-  - KP 0
-  - KP 1
-  - KP 2
-  - KP 3
-  - {t: ., type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  nav:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - PAGE UP
-  - UP
-  - PAGE DOWN
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - {t: ▽, type: trans}
-  - HOME
-  - LEFT
-  - DOWN
-  - RIGHT
-  - END
-  - {t: ▽, type: trans}
-  - F2
-  - {t: ▽, type: trans}
-  - F4
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
 combos:
 - p: [11, 12]
   k: TAB
@@ -417,4 +505,4 @@ combos:
   l: [default_win, window_win]
 - p: [30, 32]
   k: Gui+W
-  l: [default_mac, window_mac]
+  l: [default_mac, window_mac, default_ipad, window_ipad]
