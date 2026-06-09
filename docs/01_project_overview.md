@@ -1,5 +1,7 @@
 # roBa キーボード管理プロジェクト
 
+> **現行バージョン：2.0.3**（OS隣接11層＋iPad専用層）。履歴は `07_version_history.md`。
+
 ## リポジトリ
 https://github.com/1219jin/zmk-config-roBa
 

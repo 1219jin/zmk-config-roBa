@@ -1,54 +1,54 @@
 # キーマップ改善リスト
 
-## 実装済み ✅
+> 実装の正は GitHub。バージョンごとの節目は `07_version_history.md` を参照。ここは「これからやること／観察中」を管理。
 
-### 2026-06-07 大改修（レイヤー再設計）
-バックアップ：ブランチ `backup/20260607-before-redesign`（commit `1c8e5de`）／凍結ファイル `roBa_keymap_20260607_baseline.keymap`
+## 実装済み ✅（要点のみ・詳細は 07_version_history.md）
 
-| 内容 | コミット |
-|---|---|
-| SYMBOL＋NUM を `num_sym`（左手記号・右手電卓）に統合 | 大改修一括 |
-| ARROW/ARROW_MAC を `nav`（矢印・F）＋ `window_win`/`window_mac`（ウィンドウ・タブ・ブラウザ）に再編 | 大改修一括 |
-| レイヤー番号/名称を整理（0:win 1:window_win 2:default_mac 3:window_mac 4:mouse 5:scroll 6:bluetooth 7:num_sym 8:nav） | 大改修一括 |
-| トリガー再割り当て（num_sym←Space/Slash、window←変換/無変換、nav←TAB） | keymap-editor調整 |
-| `escape` コンボ追加（key-positions 18+19）＝改善⑨ | 大改修一括 |
-| `close_win`/`close_mac` コンボ（Ctrl+W / Cmd+W、レイヤー限定・短timeout）で誤爆対策＝改善⑯対応 | 大改修一括 |
-| window_mac に BetterSnapTool 5方向スナップ（1/3・2/3、LC(LA(NUMBER_1..5))）＝改善⑳ | 467f40a |
-| num_sym `=` バグ修正（`LS(EQUAL)`はJISで`~`が出る → `LS(MINUS)`が正） | 467f40a |
-| num_sym に `*`（`LS(SINGLE_QUOTE)`）を復活（物理5列に収まらず一旦欠落していた） | 467f40a |
-| num_sym 左手記号を再キュレーション（上段JIS Shift順 `! " # $ %`、`' ( ) _ @`、`[ ] { } :` を直接キー化） | 467f40a |
-| `&` を `amp` コンボ（layer 7限定、Shift+6）に移動 | 467f40a |
-| B単独ホールド廃止（bluetoothは3キー同時押しのみ）／CapsLock追加 | keymap-editor調整 |
+### 2.0 系（2026-06-08）
+- OS隣接11層へ再編＋ **iPad専用層**（default_ipad / window_ipad）＋ Globeマクロ9種【2.0.0】
+- **Del 復元**（window_win/mac/ipad の pos28）【2.0.1】
+- **Alt+F4** 直キー無効化＋ X+C+V コンボ化（window_win限定）【2.0.1】
+- **F6-F10** を nav で左シフト＋ **F7-F10 コンボ**（num_sym：R+T/F+G/Y+U/H+J）【2.0.1】
+- bluetooth フォールバックを **H/J/K = Win/Mac/iPad** に統一【2.0.2】
+- **AML参照漏れ修正**：trackball_listener(roBa_R.overlay) の旧mouse層4→8（クリック不動の解消）【2.0.3】
 
-### それ以前（〜2026-06-04）
-| 日付 | 内容 | コミット |
-|---|---|---|
-| 2026/05/04 | ZMK v0.3-branch へのバージョン固定 | 複数 |
-| 2026/05/04 | Mac/iPad対応・BT＋レイヤー同時切替マクロ（sw_win/sw_mac/sw_ipad）・有線手動切替 | ae4e67d 他 |
-| 2026/05/06 | require-prior-idle-ms / quick-tap-ms 調整、Mac透過方式化、レイヤー再構成 | 852f871 / 565bc73 / 9952d4f |
-| 2026/06/04 | AML誤起動対策：`CONFIG_PMW3610_MOVEMENT_THRESHOLD` 0→5（roBa_R.conf） | 5ec03f1 |
+### 1.0 系（〜2026-06-07）
+- 大改修（num_sym統合・nav/window分割・9層・escape/close_win/close_macコンボ・5方向スナップ・=バグ修正・ampコンボ）【1.4.0】
+- AML誤爆対策（MOVEMENT_THRESHOLD 0→5）・arrowのブラウザ/タブ操作【1.3.0】
+- JIS直接キー化・Mac透過方式・idle/quick-tap調整【1.2.0】
+- マルチOS対応（sw_win/mac/ipad・有線切替）【1.1.0】／ v0.3-branch固定【1.0.0】
 
 ---
 
-## 未実装・優先度高 🔴
+## 要観察・要検証 🔬（2.0系の実装に伴う宿題）
 
-### ⑦ Caps Word の検討
-**現状：** 大改修で `CAPSLOCK`（トグル）を追加済み。`caps_word`（次の単語だけ大文字・自動解除）とは別物。
-**残：** snake_case／定数入力に `caps_word` の方が向く場面があれば、CapsLockと使い分けるか置換を検討。
+### 誤爆観察中（隣接キーコンボ）
+- **alt_f4（X+C+V）**：隣接3キー。レイヤー不慣れ期の誤爆を承知で採用。誤爆が出たら非隣接へ再設計。
+- **F7-F10（R+T / F+G / Y+U / H+J）**：num_sym限定・idle150ms付き。特に右手側（Y+U、H+J）は数字打鍵との干渉に注意。
+- いずれも `require-prior-idle-ms` / `timeout-ms` の調整、または位置変更で対処可能。
+
+### 実機確認したい
+- **globe_ctrl_left/right**（Globe+Ctrl+矢印のタイル）：3要素マクロ。動かなければ単キー版へ差し替え。
+- **絵文字（Globe単押し）**：iPad設定により「絵文字」か「入力ソース切替」か変わる。想定と違えば iPad 側設定で調整。
+- **番号振り直しの整合**：scroll(9)のKホールド、bluetooth(10)の3キー同時押しが正しく動くか（mouse(8)のAMLクリックは2.0.3で修正済み）。
 
 ---
 
 ## 未実装・優先度中 🟡
 
-### ⑤ window/nav 下段の追加活用
+### iPad スクリーンショットキー
+**現状：** default_ipad の pos15（Mac版のスクショ位置）は &trans。
+**候補：** iPadのハードウェアキーボード用スクショ操作を確認のうえ配置。
+
+### ⑤ window/nav 下段の編集キー活用
 **候補：** Undo/Redo/保存/検索/全選択（`LC(Z)`/`LC(Y)`/`LC(S)`/`LC(F)`/`LC(A)`）。
-**注意：** これらは「文書編集」であり**ウィンドウ操作とは別コンセプト**。windowには入れず、nav側か別レイヤーに置くのが筋。
+**注意：** 「文書編集」でありウィンドウ操作とは別コンセプト。window でなく **nav 側**に置くのが筋。
 
 ### ⑩ default_mac の Mac固有キー拡充
-**候補：** `LG(SPACE)`（Spotlight）/ `LC(SPACE)`（入力ソース切替）。
+**候補：** `LG(SPACE)`（Spotlight）/ `LC(SPACE)`（入力ソース切替）。default_ipad にも横展開可。
 
-### ⑪ mouse レイヤーに MB4/MB5
-**現状：** MB1/MB2/MB3 のみ（MB4は Alt_Left コンボにあり）。MB5（進む）未配置。
+### ⑪ mouse レイヤーに MB5
+**現状：** MB1/2/3 のみ（MB4 は Alt_Left コンボ）。MB5（進む）未配置。
 
 ### ㉑ 比較演算子クラスタ `< = >`
 **現状：** `=` は num_sym 右手にあるが `< >` は未配置。Fish配列由来の改善候補。
@@ -57,7 +57,11 @@
 
 ## 未実装・優先度低 ⚪
 
-### ⑱ window_mac の右親指キー見直し
+### ⑦ Caps Word の検討
+**現状：** `CAPSLOCK`（トグル）は配置済み。`caps_word`（次の単語だけ大文字・自動解除）とは別物。
+**残：** snake_case／定数入力で使い分けるか置換を検討。
+
+### ⑱ window_mac / window_ipad の右親指キー見直し
 **候補：** `RIGHT_ALT`（Right Option）等。
 
 ---
@@ -65,13 +69,13 @@
 ## 見送り決定 ❌
 
 ### ⑥ hold-trigger-key-positions
-**理由：** 左手Shift（Z位置のみ）の使い方と相容れない。設定すると左手大文字が打てなくなる。
+**理由：** 左手Shift（Z位置のみ）の使い方と相容れない。左手大文字が打てなくなる。
 
 ### ⑲ 閉じたタブを再開
-**決定（2026-06-07）：** 普段使わないため**課題から削除**。新規タブ（Win=LC(T)/Mac=LG(T)）は実装済み。
+**決定（2026-06-07）：** 普段使わないため課題から削除。新規タブ（Win=LC(T)/Mac=LG(T)）は実装済み。
 
 ---
 
 ## 補足：keymap-editor 経由の編集について
-- 大改修後の微調整は keymap-editor で実施（トリガー再割り当て・CapsLock追加等）。
-- 記号は **直接キーコード**で統一（`JP_*` define を使わない）。`=` のように生コードを誤ると JIS で別記号が出るため、JIS対応表（05）で必ず確認すること。
+- 微調整は keymap-editor でも可。記号は **直接キーコード**で統一（`JP_*` 不使用）。
+- `=` のように生コードを誤ると JIS で別記号が出るため、JIS対応表（05）で必ず確認すること。

@@ -1,5 +1,7 @@
 # 作業手順・バージョン管理・リファレンス
 
+> バージョンの節目と特徴は `07_version_history.md` に記録する（現行 2.0.3）。
+
 ## コミットメッセージ規則
 - タイトル：英語（`feat:` / `fix:` / `chore:` / `ci:` / `restore:` / `refactor:`）
 - 説明文（Extended description）：日本語
@@ -24,6 +26,9 @@
 | `backup/before-sync-20260504` | 2026/05/04 作業開始前 |
 | `backup/20260504-working` | 2026/05/04 全作業完了・動作確認済み |
 | `backup/20260607-before-redesign` | 2026/06/07 大改修前（commit `1c8e5de`） |
+| `backup/20260608-before-reorder` | 2026/06/08 OS隣接11層＋iPad層 再編前【2.0.0】 |
+| `backup/20260608-before-combos` | 2026/06/08 Del/Alt+F4/F系コンボ 前【2.0.1】 |
+| `backup/20260608-before-hjk` | 2026/06/08 bluetooth H/J/K 前【2.0.2】 |
 
 > 凍結ファイル：`roBa_keymap_20260607_baseline.keymap`（大改修前の全文）
 
@@ -33,12 +38,12 @@
 
 | レイヤー | 移動方法 |
 |---|---|
-| num_sym (7) | Spaceホールド（左親指）/ Slashホールド（右手） |
-| window (1/3) | 変換ホールド / 無変換ホールド（OS別） |
-| nav (8) | TABホールド |
-| scroll (5) | Kホールド |
-| bluetooth (6) | 3キー同時押し（37 38 39） |
-| mouse (4) | AML（トラックボール） |
+| num_sym (6) | Spaceホールド（左親指）/ Slashホールド（右手） |
+| window (1/3/5) | 変換／無変換ホールド（OS別） |
+| nav (7) | TABホールド |
+| scroll (9) | Kホールド |
+| bluetooth (10) | 3キー同時押し（37 38 39） |
+| mouse (8) | AML（トラックボール） |
 
 ---
 
@@ -75,6 +80,11 @@
 
 ---
 
+> **AMLの移行先レイヤー参照は2か所にある**（番号変更時は両方要更新）：
+> - `config/roBa.keymap`：`&mkp_input_listener { input-processors = <&zip_temp_layer N ...>; }`
+> - `boards/shields/roBa/roBa_R.overlay`：`trackball_listener { input-processors = <&zip_temp_layer N ...>; }`
+> N は現 mouse レイヤー番号（現行 8）。片方だけだとクリックが別レイヤーに飛んで効かない（2.0.3で発生・修正）。
+
 ## トラブルシューティング
 
 | 症状 | 原因 | 対処 |
@@ -86,6 +96,7 @@
 | Draw が keymap-editor 非互換で失敗 | エディタが解決できない特定コード使用 | 記号は `LS(NUMBER_n)` 等の**直接コード**に統一 |
 | **`=` を押すと `~` が出る** | `LS(EQUAL)` を使用（JISでは`~`） | `=` は **`LS(MINUS)`**（直接コード） |
 | AMLがタイピング中に誤起動 | `MOVEMENT_THRESHOLD=0` | roBa_R.conf で `=5` 以上に |
+| **トラボ動くがクリック効かない** | AML temp-layer 参照ずれ（overlay と keymap で不一致） | roBa_R.overlay の `trackball_listener` と keymap の `mkp_input_listener` 両方を現 mouse 層番号に揃える |
 
 ---
 
