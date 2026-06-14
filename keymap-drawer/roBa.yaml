@@ -498,6 +498,7 @@ combos:
   k: {t: SPACE, h: bluetooth}
 - p: [18, 19]
   k: ESCAPE
+  l: [default_win, window_win, default_mac, window_mac, default_ipad, window_ipad]
 - p: [2, 3]
   k: Sft+6
   l: [num_sym]
@@ -521,4 +522,10 @@ combos:
   l: [num_sym]
 - p: [17, 18]
   k: F10
+  l: [num_sym]
+- p: [22, 23]
+  k: F2
+  l: [num_sym]
+- p: [24, 25]
+  k: F4
   l: [num_sym]
