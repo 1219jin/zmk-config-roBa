@@ -108,12 +108,14 @@
 ```
 > `&` は `amp` コンボ（layer 6限定）。`=`=`LS(MINUS)`、`*`=`LS(SINGLE_QUOTE)`。
 > 記号は keymap-editor 互換のため **直接キーコード**で記述（`JP_*` define 不使用）。
+> **Fキーはコンボ入力：** F7=R+T / F8=F+G / F9=Y+U / F10=H+J（既存）に加え、F2=Z+X（22+23）・F4=C+V（24+25）を左手下段に配置（Excel多用）。FキーはすべてF2〜F10がnum_sym層コンボで入力可能。
+> **ESCコンボはベース6層(0-5)限定**（layers=<0 1 2 3 4 5>）：num_sym層以降での F10コンボ(H+J, 17+18)との誤爆を防ぐ。
 
 ## nav レイアウト
 
 - 右手：矢印（↑↓←→）、Home/End、PgUp/PgDn（エンコーダ回転でも PgUp/PgDn）。
-- 左手：F6-F10（中段・左詰め、F10はエンコーダ隣から移動済み）、F2 / F4（下段）。
-- F7-F10 は num_sym コンボ（下記）からも入力可。
+- 左手：F6-F10（中段・左詰め）、F2 / F4（下段）。
+- F2/F4/F7-F10 は num_sym コンボからも入力可（nav層との重複配置）。
 
 ## コンボ一覧
 
@@ -123,7 +125,7 @@
 | shift_tab | 12+13 | Shift+TAB | 全 | |
 | Alt_Left | 17+18 | MB4（戻る） | 0-5 | F10と競合回避のためbase+window限定 |
 | Ctrl_Shift_1 | 29+30 | Ctrl+Shift+1 | 全 | |
-| escape | 18+19 | ESC | 全 | |
+| escape | 18+19 | ESC | 0-5 | num_sym以降でF10コンボとの誤爆防止 |
 | Bluetooth | 37+38+39 | bluetooth層（&lt 10 SPACE） | 全 | |
 | amp | 2+3 | `&`（Shift+6） | 6 | num_sym限定 |
 | close_win | 30+32 | Ctrl+W | 0,1 | timeout35ms・idle150ms |
@@ -133,6 +135,8 @@
 | f8 | 13+14 | F8 | 6 | F+G |
 | f9 | 5+6 | F9 | 6 | Y+U |
 | f10 | 17+18 | F10 | 6 | H+J |
+| f2 | 22+23 | F2 | 6 | Z+X（左手下段） |
+| f4 | 24+25 | F4 | 6 | C+V（左手下段） |
 
 > 誤爆対策：layer限定コンボは `require-prior-idle-ms=150` ＋短 timeout（35-50ms）。
 

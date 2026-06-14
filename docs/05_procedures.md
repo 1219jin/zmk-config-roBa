@@ -51,6 +51,7 @@
 
 | ファイル | トリガー | 役割 |
 |---|---|---|
+| `lint.yml` | push / PR / 手動 | keymap構造を静的検証（キー数・ブレース・レイヤー参照・JP_*混入）。build/drawより先に構造ミスを検出 |
 | `build.yml` | push（全般） | ファームウェア（uf2）ビルド |
 | `draw.yml` | push to main（keymap関連変更）/ 手動 | キーマップSVG生成 → keymap-drawer/にコミット |
 
