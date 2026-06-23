@@ -96,7 +96,8 @@
 | Draw が `Number of keys differ` | レイヤー間でキー数不一致 | 全レイヤーを43キーに揃える |
 | Draw が keymap-editor 非互換で失敗 | エディタが解決できない特定コード使用 | 記号は `LS(NUMBER_n)` 等の**直接コード**に統一 |
 | **`=` を押すと `~` が出る** | `LS(EQUAL)` を使用（JISでは`~`） | `=` は **`LS(MINUS)`**（直接コード） |
-| AMLがタイピング中に誤起動 | `MOVEMENT_THRESHOLD=0` | roBa_R.conf で `=5` 以上に |
+| AMLがタイピング中に誤起動（初回） | `MOVEMENT_THRESHOLD=0` | roBa_R.conf で `=5` 以上に |
+| **AML誤起動が threshold=5 でも再発**（J/I が打てない） | `require-prior-idle-ms` が短い（200ms）。単語間の休止中に手がトラボに触れて起動 | `&zip_temp_layer` の `require-prior-idle-ms` を `350` に延長（overlay・keymap 両方を同値に） |
 | **トラボ動くがクリック効かない** | AML temp-layer 参照ずれ（overlay と keymap で不一致） | roBa_R.overlay の `trackball_listener` と keymap の `mkp_input_listener` 両方を現 mouse 層番号に揃える |
 
 ---

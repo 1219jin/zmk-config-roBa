@@ -13,6 +13,7 @@
 - **AML参照漏れ修正**：trackball_listener(roBa_R.overlay) の旧mouse層4→8（クリック不動の解消）【2.0.3】
 - **ESCコンボをベース6層(0-5)限定化**：num_sym作業中のF10コンボ(17+18)との誤爆解消【2026-06-14】
 - **num_sym層にF2/F4コンボ追加**：左手下段 22+23 / 24+25（Excel多用・F7-F10と同レイヤーに集約）【2026-06-14】
+- **AML誤起動再発対策**：`zip_temp_layer` の `require-prior-idle-ms` を 200→350ms に延長（overlay・keymap両方）。threshold=5適用後も単語間休止中にトラボへ手が触れて J/I が打てなくなる事象を解消【2026-06-23 commit `11efb1f`】
 
 ### 1.0 系（〜2026-06-07）
 - 大改修（num_sym統合・nav/window分割・9層・escape/close_win/close_macコンボ・5方向スナップ・=バグ修正・ampコンボ）【1.4.0】
