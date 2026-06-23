@@ -17,7 +17,7 @@
 
 &mkp_input_listener { input-processors = <&zip_temp_layer 8 10000>; };
 
-&zip_temp_layer { require-prior-idle-ms = <200>; };
+&zip_temp_layer { require-prior-idle-ms = <350>; };
 
 &trackball { scroll-layers = <9>; };
 
